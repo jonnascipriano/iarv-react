@@ -1,10 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik&display=swap');
 @import "tailwindcss";
+
+@font-face {
+    font-family: "Busorama";
+    src: url(assets/fonts/busorama.ttf);
+}
 
 @theme{
     --color-primary: #fb5233;
     --color-secondary: #ffd530;
     --color-tertiary: #010000;
     --color-quarternary: #b41216;
-    --text-color: #ffffff;
-    --bg-2: #d8d8d8;
+    --color-text: #ffffff;
+    --color-bg2: #d8d8d8;
+
+    --font-primary: 'Busorama', sans-serif;
+    --font-secondary: 'Bebas Neue', sans-serif;
+    --font-tertiary: 'Poppins', sans-serif;
+    --font-quarternary: 'Rubik', sans-serif;
+
+    --shadow-cards: 0 10px 25px rgba(0,0,0,0.7)
+}
+
+h1{
+    font-size: 5em;
+    font-family: var(--font-secondary);
+}
+
+h2{
+    font-size: 3.5em;
+    font-family: var(--font-secondary);
+}
+
+.nav-link{
+    @apply relative pb-1 text-white transition-colors hover:text-secondary;
+}
+
+.nav-link::after{
+    content: '';
+    @apply absolute bottom-0 left-0 h-[2px] w-0 bg-secondary transition-all duration-300
+}
+
+.nav-link:hover::after{
+    @apply w-full;
 }
