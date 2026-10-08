@@ -30,7 +30,15 @@ h1{
 h2{
     font-size: 3.5em;
     font-family: var(--font-secondary);
-    @apply tracking-wider font-bold mb-12
+    @apply tracking-wider font-bold mb-12 uppercase
+}
+
+h3{
+    @apply font-bold text-xl uppercase tracking-widest font-primary
+}
+
+p{
+    @apply leading-relaxed font-tertiary
 }
 
 .nav-link{
