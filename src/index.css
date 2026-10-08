@@ -1,3 +1,10 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme{
+    --color-primary: #fb5233;
+    --color-secondary: #ffd530;
+    --color-tertiary: #010000;
+    --color-quarternary: #b41216;
+    --text-color: #ffffff;
+    --bg-2: #d8d8d8;
+}
