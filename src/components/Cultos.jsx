@@ -41,8 +41,8 @@
 export default function Cultos(){
 
     return (
-            <section className="py-16 px-6 flex flex-col items-center justify-center">
-                <h1 className="md:text-4xl font-bold tracking-widest mb-15">
+            <section className="bg-black py-16 px-6 flex flex-col items-center justify-center">
+                <h1 className="md:text-4xl text-white font-bold tracking-widest mb-15">
                     Programação Semanal
                 </h1>
 
