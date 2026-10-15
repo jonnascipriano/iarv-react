@@ -6,6 +6,7 @@ import Contribuicoes from "./components/Contribuicoes.jsx";
 import PlanoLeitura from "./components/PlanoLeitura.jsx";
 import Footer from "./components/Footer.jsx"
 import "./App.css";
+import Localizacao from "./components/Localizacao.jsx";
 
 function PaginaInicial(){
     return (
@@ -14,7 +15,7 @@ function PaginaInicial(){
             <Cultos/>
             <Contribuicoes/>
             <PlanoLeitura/>
-
+            <Localizacao/>
         </section>
     )
 }
