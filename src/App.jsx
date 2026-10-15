@@ -4,7 +4,6 @@ import Hero from "./components/Hero.jsx";
 import Cultos from "./components/Cultos.jsx"
 import Contribuicoes from "./components/Contribuicoes.jsx";
 import PlanoLeitura from "./components/PlanoLeitura.jsx";
-import Programacao from "./components/pages/Programacao.jsx";
 import Footer from "./components/Footer.jsx"
 import "./App.css";
 
@@ -28,7 +27,6 @@ export default function App(){
                 <div className="flex-1">
                     <Routes>
                         <Route path="/" element={<PaginaInicial/>}/>
-                        <Route path="/programacao" element={<Programacao/>}/>
                     </Routes>
                 </div>
 

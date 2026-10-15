@@ -1,62 +1,109 @@
-import cultoOracaoImg from '../assets/imgs/oração.jpg'
-import cultoLibertacaoImg from '../assets/imgs/libertação.jpg'
-import cultoAdoracaoImg from '../assets/imgs/adoração.jpg'
-
-export default function Cultos(){
-    const listaCultos = [
-        {
-            titulo: "Culto de Oração",
-            horario: "Quarta-feira às 19h",
-            imagem: cultoOracaoImg,
-        },
-        {
-            titulo: "Culto de Libertação",
-            horario: "Sexta-feira às 19h",
-            imagem: cultoLibertacaoImg
-        },
-        {
-            titulo: "Culto de Adoração",
-            horario: "Domingo às 18h",
-            imagem: cultoAdoracaoImg,
-        },
+    const escalaQuarta = [
+        { semana: 1, abertura: "Pra. Juliana", ministracao: "Pr. Jáder"},
+        { semana: 2, abertura: "Ob. Fernanda", ministracao: "Diac. Alexandre"},
+        { semana: 3, abertura: "Ob. Aninha", ministracao: "Pb. José Carlos"},
+        { semana: 4, abertura: "Ir. Marilene", ministracao: "Diac. Angelita"},
+        { semana: 5, abertura: "Pra. Juliana", ministracao: "Pr. Jáder"},
     ]
 
-    return(
-        <section id="cultos" className="py-20 px-6 bg-black flex flex-col items-center justify-center">
-            <h2 className="text-3xl md:text-4xl font-bold tracking-widest text-secondary mb-12 uppercase font-busorama">
-                DIAS DE CULTOS
-            </h2>
+    const escalaDomingo = [
+        { semana: 1, abertura: "Pr. Jáder", ministracao: "Pr. Júnior Alves"},
+        { semana: 2, abertura: "Diac. Alexandre", ministracao: "Pr. Júnior Alves"},
+        { semana: 3, abertura: "Pb. José Carlos", ministracao: "Pr. Júnior Alves"},
+        { semana: 4, abertura: "Ob. Paulinho", ministracao: "Pr. Jáder"},
+        { semana: 5, abertura: "Pr. Jáder", ministracao: "Diac. Alexandre"},
+    ]
 
-            <div className='flex flex-wrap items-stretch justify-center gap-8 max-w-6xl w-full'>
-                {listaCultos.map((culto, index) => (
-                    <div 
-                        key={index} 
-                        // Efeito App: rounded-3xl, padding (p-3), sombra suave e centralização
-                        className='bg-white rounded-3xl p-3 shadow-xl flex flex-col items-center text-center transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 w-full sm:w-[350px] shrink-0'
-                    >
-                        {/* Imagem do Culto com bordas próprias e margem embaixo */}
-                        <div className='h-52 w-full rounded-2xl overflow-hidden mb-5 shadow-sm'>
-                            <img
-                                src={culto.imagem}
-                                alt={culto.titulo}
-                                className='w-full h-full object-cover transition-transform duration-500 hover:scale-105'
-                            />
-                        </div>
+    function getIndiceSemana(){
 
-                        {/* Textos Centralizados e Badge */}
-                        <div className='px-4 pb-4 flex flex-col items-center gap-3 w-full'>
-                            <h3 className='text-xl font-bold text-tertiary font-busorama uppercase tracking-wider'>
-                                {culto.titulo}
-                            </h3>
-                            
-                            {/* Horário em formato de Etiqueta (Badge) */}
-                            <p className='bg-neutral-100 text-quarternary font-poppins text-sm font-bold py-2 px-6 rounded-full w-max'>
-                                {culto.horario}
+        const hoje = new Date();
+        const diaDaSemana = hoje.getDay();
+
+        const diffParaSegunda = diaDaSemana === 0 ? -6 : 1 - diaDaSemana
+        const segundaFeira = new Date(hoje)
+        segundaFeira.setDate(hoje.getDate() + diffParaSegunda)
+
+        const diaDoMesSegunda = segundaFeira.getDate();
+        let indice = Math.floor((diaDoMesSegunda - 1) / 7)
+
+        if(indice < 0) indice = 0;
+        if(indice > 4) indice = 4;
+
+        return indice;
+    }
+
+    const indiceAtual = getIndiceSemana()
+
+    const proxQuarta = escalaQuarta[indiceAtual]
+    const proxDomingo = escalaDomingo[indiceAtual]
+
+
+export default function Cultos(){
+
+    return (
+            <section className="py-16 px-6 flex flex-col items-center justify-center">
+                <h1 className="md:text-4xl font-bold tracking-widest mb-15">
+                    Programação Semanal
+                </h1>
+
+                <div className="flex flex-wrap items-stretch justify-center gap-8 max-w-6xl w-full">
+
+                    <div className="bg-white rounded-3xl p-6 shadow-xl flex flex-col transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 w-full sm:w-90 border-t-4">
+                        <h2 className="text-xl font-bold text-tertiary font-primary uppercase tracking-wider mb-1">
+                            Quarta-feira
+                        </h2>
+                        <p className="text-sm text-gray-500 font-tertiary mb-6">Culto de Oração • 19h</p>
+
+                        <div className="w-full bg-bg2 p-4 rounded-2xl flex flex-col gap-3 font-tertiary text-sm">
+                            <p className="flex flex-col">
+                                <span className="text-gray-500 text-xs uppercase">Abertura</span>
+                                <span className="font-bold text-quarternary">{proxQuarta.abertura}</span>
+                            </p>
+                            <p className="flex flex-col">
+                                <span className="text-gray-500 text-xs uppercase">Ministração</span>
+                                <span className="font-bold text-quarternary">{proxQuarta.ministracao}</span>
                             </p>
                         </div>
                     </div>
-                ))}
-            </div>
-        </section>
-    )
+
+                    <div className="bg-white rounded-3xl p-6 shadow-xl flex flex-col transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 w-full sm:w-90 border-t-4">
+                        <h2 className="text-xl font-bold text-tertiary font-primary uppercase tracking-wider mb-1">
+                            Sexta-feira
+                        </h2>
+                        <p className="text-sm text-gray-500 font-tertiary mb-6">Culto de Libertação • 19h</p>
+
+                        <div className="w-full bg-bg2 p-4 rounded-2xl flex flex-col gap-3 font-tertiary text-sm">
+                            <p className="flex flex-col">
+                                <span className="text-gray-500 text-xs uppercase">Abertura</span>
+                                <span className="font-bold text-quarternary">Pr. Junior Alves</span>
+                            </p>
+                            <p className="flex flex-col">
+                                <span className="text-gray-500 text-xs uppercase">Ministração</span>
+                                <span className="font-bold text-quarternary">Pr. Junior Alves</span>
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div className="bg-white rounded-3xl p-6 shadow-xl flex flex-col transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 w-full sm:w-90 border-t-4">
+                        <h2 className="text-xl font-bold text-tertiary font-primary uppercase tracking-wider mb-1">
+                            Domingo
+                        </h2>
+                        <p className="text-sm text-gray-500 font-tertiary mb-6">Culto de Adoração • 18h</p>
+
+                        <div className="w-full bg-bg2 p-4 rounded-2xl flex flex-col gap-3 font-tertiary text-sm">
+                            <p className="flex flex-col">
+                                <span className="text-gray-500 text-xs uppercase">Abertura</span>
+                                <span className="font-bold text-quarternary">{proxDomingo.abertura}</span>
+                            </p>
+                            <p className="flex flex-col">
+                                <span className="text-gray-500 text-xs uppercase">Ministração</span>
+                                <span className="font-bold text-quarternary">{proxDomingo.ministracao}</span>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+    );
 }

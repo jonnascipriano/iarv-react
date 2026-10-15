@@ -16,42 +16,92 @@ export default function Programacao() {
         { semana: 5, abertura: "Pr. Jáder", ministracao: "Diac. Alexandre"},
     ]
 
-    const diaDoMes = new Date().getDate()
-    const numeroDaSemana = ((Math.ceil(diaDoMes / 7)) - 1);
+    function getIndiceSemana(){
 
-    const diaAtual = new Date().getDay()
-    const diasParaDomingo = (7 - diaAtual) - 1;
+        const hoje = new Date();
+        const diaDaSemana = hoje.getDay();
 
-    const proxDomingo = escalaDomingo[numeroDaSemana]
-    const proxQuarta = escalaQuarta[numeroDaSemana]
+        const diffParaSegunda = diaDaSemana === 0 ? -6 : 1 - diaDaSemana
+        const segundaFeira = new Date(hoje)
+        segundaFeira.setDate(hoje.getDate() + diffParaSegunda)
 
-    console.log(proxDomingo)
+        const diaDoMesSegunda = segundaFeira.getDate();
+        let indice = Math.floor((diaDoMesSegunda - 1) / 7)
 
-    console.log(diaDoMes, numeroDaSemana)
-    console.log(diaAtual, diasParaDomingo)
+        if(indice < 0) indice = 0;
+        if(indice > 4) indice = 4;
+
+        return indice;
+    }
+
+    const indiceAtual = getIndiceSemana()
+
+    const proxQuarta = escalaQuarta[indiceAtual]
+    const proxDomingo = escalaDomingo[indiceAtual]
 
     return (
-            <section>
-                <h1 className="text-center">Programação Semanal</h1>
-                <div className="flex flex-col min-w-full p-9 gap-20">
-                    <div className="bg-white rounded-3xl p-6 shadow-xl">
-                        <h2 className="mb-0">Quarta-feira</h2>
-                        <p>Culto de Oração</p>
-                        <p>Abertura do culto: {proxQuarta.abertura}</p>
-                        <p>Ministração: {proxQuarta.ministracao}</p>
+            <section className="py-16 px-6 flex flex-col items-center justify-center">
+                <h1 className="md:text-4xl font-bold tracking-widest mb-15">
+                    Programação Semanal
+                </h1>
+
+                <div className="flex flex-wrap items-stretch justify-center gap-8 max-w-6xl w-full">
+
+                    <div className="bg-white rounded-3xl p-6 shadow-xl flex flex-col transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 w-full sm:w-90 border-t-4">
+                        <h2 className="text-xl font-bold text-tertiary font-primary uppercase tracking-wider mb-1">
+                            Quarta-feira
+                        </h2>
+                        <p className="text-sm text-gray-500 font-tertiary mb-6">Culto de Oração • 19h</p>
+
+                        <div className="w-full bg-bg2 p-4 rounded-2xl flex flex-col gap-3 font-tertiary text-sm">
+                            <p className="flex flex-col">
+                                <span className="text-gray-500 text-xs uppercase">Abertura</span>
+                                <span className="font-bold text-quarternary">{proxQuarta.abertura}</span>
+                            </p>
+                            <p className="flex flex-col">
+                                <span className="text-gray-500 text-xs uppercase">Ministração</span>
+                                <span className="font-bold text-quarternary">{proxQuarta.ministracao}</span>
+                            </p>
+                        </div>
                     </div>
-                    <div className="bg-white rounded-3xl p-6 shadow-xl">
-                        <h2>Sexta-feira</h2>
-                        <p>Culto de Libertação</p>
-                        <p>Abertura do culto: Pr. Junior Alves</p>
-                        <p>Ministração: Pr. Junior Alves</p>
+
+                    <div className="bg-white rounded-3xl p-6 shadow-xl flex flex-col transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 w-full sm:w-90 border-t-4">
+                        <h2 className="text-xl font-bold text-tertiary font-primary uppercase tracking-wider mb-1">
+                            Sexta-feira
+                        </h2>
+                        <p className="text-sm text-gray-500 font-tertiary mb-6">Culto de Libertação • 19h</p>
+
+                        <div className="w-full bg-bg2 p-4 rounded-2xl flex flex-col gap-3 font-tertiary text-sm">
+                            <p className="flex flex-col">
+                                <span className="text-gray-500 text-xs uppercase">Abertura</span>
+                                <span className="font-bold text-quarternary">Pr. Junior Alves</span>
+                            </p>
+                            <p className="flex flex-col">
+                                <span className="text-gray-500 text-xs uppercase">Ministração</span>
+                                <span className="font-bold text-quarternary">Pr. Junior Alves</span>
+                            </p>
+                        </div>
                     </div>
-                    <div className="bg-white rounded-3xl p-6 shadow-xl">
-                        <h2>Domingo</h2>
-                        <p>Culto de Adoração</p>
-                        <p>Abertura do culto: {proxDomingo.abertura}</p>
-                        <p>Ministração: {proxDomingo.ministracao}</p>
+
+
+                    <div className="bg-white rounded-3xl p-6 shadow-xl flex flex-col transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 w-full sm:w-90 border-t-4">
+                        <h2 className="text-xl font-bold text-tertiary font-primary uppercase tracking-wider mb-1">
+                            Domingo
+                        </h2>
+                        <p className="text-sm text-gray-500 font-tertiary mb-6">Culto de Adoração • 18h</p>
+
+                        <div className="w-full bg-bg2 p-4 rounded-2xl flex flex-col gap-3 font-tertiary text-sm">
+                            <p className="flex flex-col">
+                                <span className="text-gray-500 text-xs uppercase">Abertura</span>
+                                <span className="font-bold text-quarternary">{proxDomingo.abertura}</span>
+                            </p>
+                            <p className="flex flex-col">
+                                <span className="text-gray-500 text-xs uppercase">Ministração</span>
+                                <span className="font-bold text-quarternary">{proxDomingo.ministracao}</span>
+                            </p>
+                        </div>
                     </div>
+
                 </div>
             </section>
     );

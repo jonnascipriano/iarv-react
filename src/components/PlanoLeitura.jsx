@@ -1,5 +1,3 @@
-// import BgBiblia from "../assets/imgs/biblia-leitura.jpg";
-import Plano from "../assets/arquivos/Plano de Leitura.pdf";
 import Botao from "./Botao"
 
 export default function PlanoLeitura() {
@@ -16,7 +14,11 @@ export default function PlanoLeitura() {
                             – Salmos 119:105
                         </span>
                     </blockquote>
-                    <a target="_blank" href={Plano}>
+                    <a 
+                        target="_blank" 
+                        href="./public/Plano de Leitura.pdf"
+                        download="Plano de Leitura.pdf"
+                    >
                         <Botao>Baixar Plano em PDF</Botao>
                     </a>
                 </div>
