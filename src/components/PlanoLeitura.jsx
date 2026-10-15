@@ -15,8 +15,7 @@ export default function PlanoLeitura() {
                         </span>
                     </blockquote>
                     <a 
-                        target="_blank" 
-                        href="./public/Plano de Leitura.pdf"
+                        href={`${import.meta.env.BASE_URL}Plano%20de%20Leitura.pdf`}
                         download="Plano de Leitura.pdf"
                     >
                         <Botao>Baixar Plano em PDF</Botao>
