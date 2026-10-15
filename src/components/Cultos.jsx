@@ -22,8 +22,8 @@ export default function Cultos(){
     ]
 
     return(
-        <section id="cultos" className="py-20 px-6 bg-bg2 flex flex-col items-center justify-center">
-            <h2 className="text-3xl md:text-4xl font-bold tracking-widest text-tertiary mb-12 uppercase font-busorama">
+        <section id="cultos" className="py-20 px-6 bg-black flex flex-col items-center justify-center">
+            <h2 className="text-3xl md:text-4xl font-bold tracking-widest text-secondary mb-12 uppercase font-busorama">
                 DIAS DE CULTOS
             </h2>
 

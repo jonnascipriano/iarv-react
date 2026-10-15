@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import logo from '../assets/logo.png'
 
 export default function Navbar(){
@@ -20,11 +21,11 @@ export default function Navbar(){
             </div>
 
             <nav className='flex flex-wrap gap-6 text-sm font-tertiary justify-center'>
-                <a href="" className="nav-link">Início</a>
-                <a href="" className="nav-link">Quem somos</a>
-                <a href="" className="nav-link">Programação Semanal</a>
-                <a href="" className="nav-link">Ministérios</a>
-                <a href="" className="nav-link">Contato</a>
+                <Link to="/" className="nav-link">Início</Link>
+                <Link to="" className="nav-link">Quem somos</Link>
+                <Link to="/programacao" className="nav-link">Programação Semanal</Link>
+                <Link to="" className="nav-link">Ministérios</Link>
+                <Link to="" className="nav-link">Contato</Link>
             </nav>
 
 
