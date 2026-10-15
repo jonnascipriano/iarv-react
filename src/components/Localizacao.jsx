@@ -34,6 +34,7 @@ export default function Localizacao() {
 
             {/* Rodapé informativo abaixo do mapa */}
             <div className="mt-8 flex flex-col items-center text-center font-poppins">
+            <p className="text-white mb-10">R. Laurindo Bonfim da Silva, 268 - Edmundo Rodrigues, Forquilha - CE</p>
                 <a 
                     href="https://maps.app.goo.gl/eXBRECDUr5sz3m4F7" 
                     target="_blank" 
