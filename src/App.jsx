@@ -9,29 +9,30 @@ import "./App.css";
 
 function PaginaInicial(){
     return (
-        <main className="flex-1">
+        <section className="flex-1">
             <Hero/>
             <Cultos/>
             <Contribuicoes/>
             <PlanoLeitura/>
-        </main>
+
+        </section>
     )
 }
 
 export default function App(){
     return(
         <HashRouter>
-            <div className="min-h-screen flex flex-col bg-bg2">
+            <main className="min-h-screen flex flex-col bg-bg2">
                 <Navbar/>
 
-                <div className="flex-1">
+                <section className="flex-1">
                     <Routes>
                         <Route path="/" element={<PaginaInicial/>}/>
                     </Routes>
-                </div>
+                </section>
 
                 <Footer/>
-            </div>
+            </main>
         </HashRouter>
     )
 }
