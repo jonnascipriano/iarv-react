@@ -24,7 +24,6 @@ export default function Navbar(){
                 <Link to="/" className="nav-link">Início</Link>
                 <Link to="" className="nav-link">Quem somos</Link>
                 <Link to="" className="nav-link">Ministérios</Link>
-                <Link to="" className="nav-link">Contato</Link>
             </nav>
 
 
