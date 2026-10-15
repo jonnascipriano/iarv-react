@@ -13,8 +13,8 @@ function PaginaInicial(){
         <section className="flex-1">
             <Hero/>
             <Cultos/>
-            <Contribuicoes/>
             <PlanoLeitura/>
+            <Contribuicoes/>
             <Localizacao/>
         </section>
     )
