@@ -7,6 +7,7 @@ import PlanoLeitura from "./components/PlanoLeitura.jsx";
 import Footer from "./components/Footer.jsx"
 import "./App.css";
 import Localizacao from "./components/Localizacao.jsx";
+import Galeria from "./components/Galeria.jsx";
 
 function PaginaInicial(){
     return (
@@ -29,8 +30,10 @@ export default function App(){
                 <section className="flex-1">
                     <Routes>
                         <Route path="/" element={<PaginaInicial/>}/>
+                        <Route path="/galeria" element={<Galeria/>}/>
                     </Routes>
                 </section>
+
 
                 <Footer/>
             </main>
