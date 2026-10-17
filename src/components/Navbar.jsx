@@ -22,8 +22,9 @@ export default function Navbar(){
 
             <nav className='flex flex-wrap gap-6 text-sm font-tertiary justify-center'>
                 <Link to="/" className="nav-link">Início</Link>
-                <Link to="/galeria" className="nav-link">Quem somos</Link>
-                <Link to="" className="nav-link">Ministérios</Link>
+                <Link to="/sobre" className="nav-link">Quem somos</Link>
+                <Link to="/galeria" className="nav-link">Galeria</Link>
+                <Link to="/" className="nav-link">Contato</Link>
             </nav>
 
 
