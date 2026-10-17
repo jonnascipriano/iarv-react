@@ -6,6 +6,8 @@ const arquivosDeImagem = import.meta.glob(
     { eager: true, import: "default", query: "?url" }
 );
 
+
+
 const imagens = Object.entries(arquivosDeImagem)
     .map(([caminho, src]) => {
         const partes = caminho.replace(caminhoDasImagens, "").split("/");
@@ -34,6 +36,10 @@ export default function Galeria() {
         : imagens.filter((imagem) => imagem.categoria === categoriaSelecionada);
     const imagemAberta = indiceImagemAberta === null ? null : imagensVisiveis[indiceImagemAberta];
 
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+    
     useEffect(() => {
         if (indiceImagemAberta === null) return undefined;
 

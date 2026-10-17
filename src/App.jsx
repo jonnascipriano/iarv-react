@@ -9,6 +9,7 @@ import "./App.css";
 import Localizacao from "./components/Localizacao.jsx";
 import Galeria from "./components/Galeria.jsx";
 import Contatos from "./components/Contatos.jsx";
+import QuemSomos from "./components/QuemSomos.jsx";
 
 function PaginaInicial(){
     return (
@@ -33,6 +34,7 @@ export default function App(){
                         <Route path="/" element={<PaginaInicial/>}/>
                         <Route path="/galeria" element={<Galeria/>}/>
                         <Route path="/contatos" element={<Contatos/>}/>
+                        <Route path="/quemsomos" element={<QuemSomos/>}/>
                     </Routes>
                 </section>
 
