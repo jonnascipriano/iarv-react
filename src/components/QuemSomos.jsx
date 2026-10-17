@@ -23,23 +23,7 @@ export default function QuemSomos() {
             </div>
 
             <div className="flex flex-col gap-12 w-full max-w-5xl mx-auto items-center mb-12">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full">
-                    <div className="bg-white p-8 rounded-3xl shadow-2xl border-t-4 border-primary transition-transform duration-300 hover:-translate-y-1">
-                        <h2 className="text-2xl font-bold font-busorama text-tertiary mb-4">Nossa Missão</h2>
-                        <p className="font-poppins text-gray-600 leading-relaxed">
-                            Restaurar vidas através do amor de Cristo, acolhendo famílias e transformando nossa comunidade com a pregação
-                            genuína da Palavra de Deus.
-                        </p>
-                    </div>
-
-                    <div className="bg-white p-8 rounded-3xl shadow-2xl border-t-4 border-quarternary transition-transform duration-300 hover:-translate-y-1">
-                        <h2 className="text-2xl font-bold font-busorama text-tertiary mb-4">Nossa Visão</h2>
-                        <p className="font-poppins text-gray-600 leading-relaxed">
-                            Ser uma igreja relevante em Forquilha e região, reconhecida por ser um hospital de almas e um lar espiritual
-                            para todos que buscam esperança.
-                        </p>
-                    </div>
-                </div>
+                
 
                 <div className="w-full bg-white p-8 md:p-12 rounded-3xl shadow-2xl relative mt-8">
                     <h2 className="text-2xl md:text-3xl font-bold font-busorama text-tertiary mb-12 text-center">Nossa História</h2>
