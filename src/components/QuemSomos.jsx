@@ -1,6 +1,16 @@
 import Botao from "./Botao";
 import { Link } from "react-router-dom";
 
+const imagensDaHistoria = Object.fromEntries(
+    Object.entries(
+        import.meta.glob("../assets/imgs/quemsomos/*.jpg", {
+            eager: true,
+            import: "default",
+            query: "?url",
+        }),
+    ).map(([caminho, url]) => [caminho.slice(caminho.lastIndexOf("/") + 1), url]),
+);
+
 export default function QuemSomos() {
     return (
         <section className="py-20 bg-bg2 flex flex-col items-center w-full px-6 min-h-screen">
@@ -37,7 +47,6 @@ export default function QuemSomos() {
                     <div className="relative border-l-4 border-gray-200 ml-4 md:ml-10 flex flex-col gap-16">
                         {" "}
                         {/* Aumentei o gap para dar respiro entre os eventos */}
-
                         {/* ITEM 1 DA HISTÓRIA - Praça de Cuba*/}
                         <div className="relative pl-8 md:pl-12">
                             <div className="absolute -left-[14px] top-1 w-6 h-6 bg-primary rounded-full border-4 border-white shadow-md"></div>
@@ -52,7 +61,7 @@ export default function QuemSomos() {
                                 {/* Container da Imagem */}
                                 <div className="w-full md:w-1/2 rounded-2xl overflow-hidden shadow-md bg-gray-100">
                                     <img
-                                        src="./src/assets/imgs/quemsomos/pracadecuba.jpg" // <-- COLOQUE O LINK DA FOTO 1 AQUI
+                                        src={imagensDaHistoria["pracadecuba.jpg"]}
                                         alt="Primeiros encontros da igreja"
                                         className="w-full h-48 md:h-64 object-cover hover:scale-105 transition-transform duration-500"
                                     />
@@ -72,7 +81,7 @@ export default function QuemSomos() {
                                 </p>
                                 <div className="w-full md:w-1/2 rounded-2xl overflow-hidden shadow-md bg-gray-100">
                                     <img
-                                        src="./src/assets/imgs/quemsomos/inauguracao.jpg" // <-- COLOQUE O LINK DA FOTO 2 AQUI
+                                        src={imagensDaHistoria["inauguracao.jpg"]}
                                         alt="Inauguração"
                                         className="w-full h-48 md:h-64 object-cover hover:scale-105 transition-transform duration-500"
                                     />
@@ -85,11 +94,12 @@ export default function QuemSomos() {
                             <h3 className="font-busorama text-xl text-tertiary font-bold mb-4">Programa Voz da Restauração</h3>
                             <div className="flex flex-col md:flex-row gap-6 items-start">
                                 <p className="font-poppins text-gray-600 leading-relaxed md:w-1/2">
-                                    De segunda a sexta, às 13h, Pr. Júnior Alves, Pr Jáder Loiola e equipe faziam parte do programa de rádio mais ouvido de Forquilha e Região.
+                                    De segunda a sexta, às 13h, Pr. Júnior Alves, Pr Jáder Loiola e equipe faziam parte do programa de rádio
+                                    mais ouvido de Forquilha e Região.
                                 </p>
                                 <div className="w-full md:w-1/2 rounded-2xl overflow-hidden shadow-md bg-gray-100">
                                     <img
-                                        src="./src/assets/imgs/quemsomos/radio.jpg" // <-- COLOQUE O LINK DA FOTO 3 AQUI
+                                        src={imagensDaHistoria["radio.jpg"]}
                                         alt="Rádio"
                                         className="w-full h-48 md:h-64 object-cover hover:scale-105 transition-transform duration-500"
                                     />
@@ -108,7 +118,7 @@ export default function QuemSomos() {
                                 </p>
                                 <div className="w-full md:w-1/2 rounded-2xl overflow-hidden shadow-md bg-gray-100">
                                     <img
-                                        src="./src/assets/imgs/quemsomos/evangelizacao.jpg" // <-- COLOQUE O LINK DA FOTO 2 AQUI
+                                        src={imagensDaHistoria["evangelizacao.jpg"]}
                                         alt="Evangelização"
                                         className="w-full h-48 md:h-64 object-cover hover:scale-105 transition-transform duration-500"
                                     />
@@ -125,7 +135,7 @@ export default function QuemSomos() {
                                 </p>
                                 <div className="w-full md:w-1/2 rounded-2xl overflow-hidden shadow-md bg-gray-100">
                                     <img
-                                        src="./src/assets/imgs/quemsomos/culto.jpg" // <-- COLOQUE O LINK DA FOTO 3 AQUI
+                                        src={imagensDaHistoria["culto.jpg"]}
                                         alt="Culto"
                                         className="w-full h-48 md:h-64 object-cover hover:scale-105 transition-transform duration-500"
                                     />
@@ -138,11 +148,12 @@ export default function QuemSomos() {
                             <h3 className="font-busorama text-xl text-quarternary font-bold mb-4">1º Aniversário</h3>
                             <div className="flex flex-col md:flex-row-reverse gap-6 items-start">
                                 <p className="font-poppins text-gray-600 leading-relaxed md:w-1/2">
-                                    Completando 1 ano de inauguração, foi feito o aniversário em frente a igreja, e já profetizando de que aquele local escuro em frente, fosse criado uma praça.
+                                    Completando 1 ano de inauguração, foi feito o aniversário em frente a igreja, e já profetizando de que
+                                    aquele local escuro em frente, fosse criado uma praça.
                                 </p>
                                 <div className="w-full md:w-1/2 rounded-2xl overflow-hidden shadow-md bg-gray-100">
                                     <img
-                                        src="./src/assets/imgs/quemsomos/aniversario-1.jpg"
+                                        src={imagensDaHistoria["aniversario-1.jpg"]}
                                         alt="1º Aniversário"
                                         className="w-full h-48 md:h-64 object-cover hover:scale-105 transition-transform duration-500"
                                     />
@@ -155,11 +166,12 @@ export default function QuemSomos() {
                             <h3 className="font-busorama text-xl text-tertiary font-bold mb-4">Reforma - Sede</h3>
                             <div className="flex flex-col md:flex-row gap-6 items-start">
                                 <p className="font-poppins text-gray-600 leading-relaxed md:w-1/2">
-                                    Pintura nas paredes externas e internas, cerâmica nova, banner no altar e ventiladores novos fizeram parte da 1º reforma no templo.
+                                    Pintura nas paredes externas e internas, cerâmica nova, banner no altar e ventiladores novos fizeram
+                                    parte da 1º reforma no templo.
                                 </p>
                                 <div className="w-full md:w-1/2 rounded-2xl overflow-hidden shadow-md bg-gray-100">
                                     <img
-                                        src="./src/assets/imgs/quemsomos/reforma.jpg"
+                                        src={imagensDaHistoria["reforma.jpg"]}
                                         alt="Reforma"
                                         className="w-full h-48 md:h-64 object-cover hover:scale-105 transition-transform duration-500"
                                     />
@@ -176,7 +188,7 @@ export default function QuemSomos() {
                                 </p>
                                 <div className="w-full md:w-1/2 rounded-2xl overflow-hidden shadow-md bg-gray-100">
                                     <img
-                                        src="./src/assets/imgs/quemsomos/reforma-varzea.jpg"
+                                        src={imagensDaHistoria["reforma-varzea.jpg"]}
                                         alt="Reforma - Varzea da Cobra"
                                         className="w-full h-48 md:h-64 object-cover hover:scale-105 transition-transform duration-500"
                                     />
@@ -193,7 +205,7 @@ export default function QuemSomos() {
                                 </p>
                                 <div className="w-full md:w-1/2 rounded-2xl overflow-hidden shadow-md bg-gray-100">
                                     <img
-                                        src="./src/assets/imgs/quemsomos/resultado-reforma-varzea.jpg"
+                                        src={imagensDaHistoria["resultado-reforma-varzea.jpg"]}
                                         alt="Reforma - Varzea da Cobra"
                                         className="w-full h-48 md:h-64 object-cover hover:scale-105 transition-transform duration-500"
                                     />
@@ -205,12 +217,10 @@ export default function QuemSomos() {
                             <div className="absolute -left-[14px] top-1 w-6 h-6 bg-quarternary rounded-full border-4 border-white shadow-md"></div>
                             <h3 className="font-busorama text-xl text-quarternary font-bold mb-4">Culto</h3>
                             <div className="flex flex-col md:flex-row-reverse gap-6 items-start">
-                                <p className="font-poppins text-gray-600 leading-relaxed md:w-1/2">
-                                
-                                </p>
+                                <p className="font-poppins text-gray-600 leading-relaxed md:w-1/2"></p>
                                 <div className="w-full md:w-1/2 rounded-2xl overflow-hidden shadow-md bg-gray-100">
                                     <img
-                                        src="./src/assets/imgs/quemsomos/culto-2.jpg"
+                                        src={imagensDaHistoria["culto-2.jpg"]}
                                         alt="Culto"
                                         className="w-full h-48 md:h-64 object-cover hover:scale-105 transition-transform duration-500"
                                     />
@@ -222,11 +232,10 @@ export default function QuemSomos() {
                             <div className="absolute -left-[14px] top-1 w-6 h-6 bg-tertiary rounded-full border-4 border-white shadow-md"></div>
                             <h3 className="font-busorama text-xl text-tertiary font-bold mb-4">Ato profético - Praça da paz</h3>
                             <div className="flex flex-col md:flex-row gap-6 items-start">
-                                <p className="font-poppins text-gray-600 leading-relaxed md:w-1/2">
-                                </p>
+                                <p className="font-poppins text-gray-600 leading-relaxed md:w-1/2"></p>
                                 <div className="w-full md:w-1/2 rounded-2xl overflow-hidden shadow-md bg-gray-100">
                                     <img
-                                        src="./src/assets/imgs/quemsomos/ato-praca-da-paz.jpg"
+                                        src={imagensDaHistoria["ato-praca-da-paz.jpg"]}
                                         alt="Ato profético - Praça da Paz"
                                         className="w-full h-48 md:h-64 object-cover hover:scale-105 transition-transform duration-500"
                                     />
@@ -236,14 +245,17 @@ export default function QuemSomos() {
                         {/* ITEM 13 DA HISTÓRIA - Evangelização 2*/}
                         <div className="relative pl-8 md:pl-12">
                             <div className="absolute -left-[14px] top-1 w-6 h-6 bg-quarternary rounded-full border-4 border-white shadow-md"></div>
-                            <h3 className="font-busorama text-xl text-quarternary font-bold mb-4">Evangelização em prol do 2º Aniversário</h3>
+                            <h3 className="font-busorama text-xl text-quarternary font-bold mb-4">
+                                Evangelização em prol do 2º Aniversário
+                            </h3>
                             <div className="flex flex-col md:flex-row-reverse gap-6 items-start">
                                 <p className="font-poppins text-gray-600 leading-relaxed md:w-1/2">
-                                    Toda a equipe de obreiros e juventude fazendo evangelização com panfletos, convidando para o 2º Aniversário que aconteceria nas igrejas de Forquilha, Sobral e Varzea da Cobra
+                                    Toda a equipe de obreiros e juventude fazendo evangelização com panfletos, convidando para o 2º
+                                    Aniversário que aconteceria nas igrejas de Forquilha, Sobral e Varzea da Cobra
                                 </p>
                                 <div className="w-full md:w-1/2 rounded-2xl overflow-hidden shadow-md bg-gray-100">
                                     <img
-                                        src="./src/assets/imgs/quemsomos/evangelizacao-2.jpg"
+                                        src={imagensDaHistoria["evangelizacao-2.jpg"]}
                                         alt="Evangelização 2"
                                         className="w-full h-48 md:h-64 object-cover hover:scale-105 transition-transform duration-500"
                                     />
@@ -255,11 +267,10 @@ export default function QuemSomos() {
                             <div className="absolute -left-[14px] top-1 w-6 h-6 bg-tertiary rounded-full border-4 border-white shadow-md"></div>
                             <h3 className="font-busorama text-xl text-tertiary font-bold mb-4">2º Aniversário - Forquilha</h3>
                             <div className="flex flex-col md:flex-row gap-6 items-start">
-                                <p className="font-poppins text-gray-600 leading-relaxed md:w-1/2">
-                                </p>
+                                <p className="font-poppins text-gray-600 leading-relaxed md:w-1/2"></p>
                                 <div className="w-full md:w-1/2 rounded-2xl overflow-hidden shadow-md bg-gray-100">
                                     <img
-                                        src="./src/assets/imgs/quemsomos/aniversario-2-sede.jpg"
+                                        src={imagensDaHistoria["aniversario-2-sede.jpg"]}
                                         alt="2º Aniversário"
                                         className="w-full h-48 md:h-64 object-cover hover:scale-105 transition-transform duration-500"
                                     />
@@ -271,11 +282,10 @@ export default function QuemSomos() {
                             <div className="absolute -left-[14px] top-1 w-6 h-6 bg-quarternary rounded-full border-4 border-white shadow-md"></div>
                             <h3 className="font-busorama text-xl text-quarternary font-bold mb-4">2º Aniversário - Sobral</h3>
                             <div className="flex flex-col md:flex-row-reverse gap-6 items-start">
-                                <p className="font-poppins text-gray-600 leading-relaxed md:w-1/2">
-                                </p>
+                                <p className="font-poppins text-gray-600 leading-relaxed md:w-1/2"></p>
                                 <div className="w-full md:w-1/2 rounded-2xl overflow-hidden shadow-md bg-gray-100">
                                     <img
-                                        src="./src/assets/imgs/quemsomos/aniversario-2-sobral.jpg"
+                                        src={imagensDaHistoria["aniversario-2-sobral.jpg"]}
                                         alt="2º Aniversário"
                                         className="w-full h-48 md:h-64 object-cover hover:scale-105 transition-transform duration-500"
                                     />
@@ -287,11 +297,10 @@ export default function QuemSomos() {
                             <div className="absolute -left-[14px] top-1 w-6 h-6 bg-tertiary rounded-full border-4 border-white shadow-md"></div>
                             <h3 className="font-busorama text-xl text-tertiary font-bold mb-4">2º Aniversário - Várzea da Cobra</h3>
                             <div className="flex flex-col md:flex-row gap-6 items-start">
-                                <p className="font-poppins text-gray-600 leading-relaxed md:w-1/2">
-                                </p>
+                                <p className="font-poppins text-gray-600 leading-relaxed md:w-1/2"></p>
                                 <div className="w-full md:w-1/2 rounded-2xl overflow-hidden shadow-md bg-gray-100">
                                     <img
-                                        src="./src/assets/imgs/quemsomos/aniversario-2-varzea.jpg"
+                                        src={imagensDaHistoria["aniversario-2-varzea.jpg"]}
                                         alt="2º Aniversário"
                                         className="w-full h-48 md:h-64 object-cover hover:scale-105 transition-transform duration-500"
                                     />
