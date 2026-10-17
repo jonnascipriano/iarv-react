@@ -73,7 +73,7 @@ export default function QuemSomos() {
                                 <div className="w-full md:w-1/2 rounded-2xl overflow-hidden shadow-md bg-gray-100">
                                     <img
                                         src="./src/assets/imgs/quemsomos/inauguracao.jpg" // <-- COLOQUE O LINK DA FOTO 2 AQUI
-                                        alt="Crescimento da igreja e departamentos"
+                                        alt="Inauguração"
                                         className="w-full h-48 md:h-64 object-cover hover:scale-105 transition-transform duration-500"
                                     />
                                 </div>
@@ -90,7 +90,7 @@ export default function QuemSomos() {
                                 <div className="w-full md:w-1/2 rounded-2xl overflow-hidden shadow-md bg-gray-100">
                                     <img
                                         src="./src/assets/imgs/quemsomos/radio.jpg" // <-- COLOQUE O LINK DA FOTO 3 AQUI
-                                        alt="Dias atuais na Sede Forquilha"
+                                        alt="Rádio"
                                         className="w-full h-48 md:h-64 object-cover hover:scale-105 transition-transform duration-500"
                                     />
                                 </div>
@@ -109,7 +109,7 @@ export default function QuemSomos() {
                                 <div className="w-full md:w-1/2 rounded-2xl overflow-hidden shadow-md bg-gray-100">
                                     <img
                                         src="./src/assets/imgs/quemsomos/evangelizacao.jpg" // <-- COLOQUE O LINK DA FOTO 2 AQUI
-                                        alt="Crescimento da igreja e departamentos"
+                                        alt="Evangelização"
                                         className="w-full h-48 md:h-64 object-cover hover:scale-105 transition-transform duration-500"
                                     />
                                 </div>
@@ -126,7 +126,7 @@ export default function QuemSomos() {
                                 <div className="w-full md:w-1/2 rounded-2xl overflow-hidden shadow-md bg-gray-100">
                                     <img
                                         src="./src/assets/imgs/quemsomos/culto.jpg" // <-- COLOQUE O LINK DA FOTO 3 AQUI
-                                        alt="Dias atuais na Sede Forquilha"
+                                        alt="Culto"
                                         className="w-full h-48 md:h-64 object-cover hover:scale-105 transition-transform duration-500"
                                     />
                                 </div>
@@ -143,7 +143,7 @@ export default function QuemSomos() {
                                 <div className="w-full md:w-1/2 rounded-2xl overflow-hidden shadow-md bg-gray-100">
                                     <img
                                         src="./src/assets/imgs/quemsomos/aniversario-1.jpg"
-                                        alt="Crescimento da igreja e departamentos"
+                                        alt="1º Aniversário"
                                         className="w-full h-48 md:h-64 object-cover hover:scale-105 transition-transform duration-500"
                                     />
                                 </div>
@@ -160,7 +160,7 @@ export default function QuemSomos() {
                                 <div className="w-full md:w-1/2 rounded-2xl overflow-hidden shadow-md bg-gray-100">
                                     <img
                                         src="./src/assets/imgs/quemsomos/reforma.jpg"
-                                        alt="Dias atuais na Sede Forquilha"
+                                        alt="Reforma"
                                         className="w-full h-48 md:h-64 object-cover hover:scale-105 transition-transform duration-500"
                                     />
                                 </div>
@@ -177,7 +177,7 @@ export default function QuemSomos() {
                                 <div className="w-full md:w-1/2 rounded-2xl overflow-hidden shadow-md bg-gray-100">
                                     <img
                                         src="./src/assets/imgs/quemsomos/reforma-varzea.jpg"
-                                        alt="Crescimento da igreja e departamentos"
+                                        alt="Reforma - Varzea da Cobra"
                                         className="w-full h-48 md:h-64 object-cover hover:scale-105 transition-transform duration-500"
                                     />
                                 </div>
@@ -194,7 +194,7 @@ export default function QuemSomos() {
                                 <div className="w-full md:w-1/2 rounded-2xl overflow-hidden shadow-md bg-gray-100">
                                     <img
                                         src="./src/assets/imgs/quemsomos/resultado-reforma-varzea.jpg"
-                                        alt="Dias atuais na Sede Forquilha"
+                                        alt="Reforma - Varzea da Cobra"
                                         className="w-full h-48 md:h-64 object-cover hover:scale-105 transition-transform duration-500"
                                     />
                                 </div>
@@ -211,7 +211,7 @@ export default function QuemSomos() {
                                 <div className="w-full md:w-1/2 rounded-2xl overflow-hidden shadow-md bg-gray-100">
                                     <img
                                         src="./src/assets/imgs/quemsomos/culto-2.jpg"
-                                        alt="Crescimento da igreja e departamentos"
+                                        alt="Culto"
                                         className="w-full h-48 md:h-64 object-cover hover:scale-105 transition-transform duration-500"
                                     />
                                 </div>
@@ -227,7 +227,7 @@ export default function QuemSomos() {
                                 <div className="w-full md:w-1/2 rounded-2xl overflow-hidden shadow-md bg-gray-100">
                                     <img
                                         src="./src/assets/imgs/quemsomos/ato-praca-da-paz.jpg"
-                                        alt="Dias atuais na Sede Forquilha"
+                                        alt="Ato profético - Praça da Paz"
                                         className="w-full h-48 md:h-64 object-cover hover:scale-105 transition-transform duration-500"
                                     />
                                 </div>
@@ -244,7 +244,7 @@ export default function QuemSomos() {
                                 <div className="w-full md:w-1/2 rounded-2xl overflow-hidden shadow-md bg-gray-100">
                                     <img
                                         src="./src/assets/imgs/quemsomos/evangelizacao-2.jpg"
-                                        alt="Crescimento da igreja e departamentos"
+                                        alt="Evangelização 2"
                                         className="w-full h-48 md:h-64 object-cover hover:scale-105 transition-transform duration-500"
                                     />
                                 </div>
@@ -260,7 +260,7 @@ export default function QuemSomos() {
                                 <div className="w-full md:w-1/2 rounded-2xl overflow-hidden shadow-md bg-gray-100">
                                     <img
                                         src="./src/assets/imgs/quemsomos/aniversario-2-sede.jpg"
-                                        alt="Dias atuais na Sede Forquilha"
+                                        alt="2º Aniversário"
                                         className="w-full h-48 md:h-64 object-cover hover:scale-105 transition-transform duration-500"
                                     />
                                 </div>
@@ -276,7 +276,7 @@ export default function QuemSomos() {
                                 <div className="w-full md:w-1/2 rounded-2xl overflow-hidden shadow-md bg-gray-100">
                                     <img
                                         src="./src/assets/imgs/quemsomos/aniversario-2-sobral.jpg"
-                                        alt="Crescimento da igreja e departamentos"
+                                        alt="2º Aniversário"
                                         className="w-full h-48 md:h-64 object-cover hover:scale-105 transition-transform duration-500"
                                     />
                                 </div>
@@ -292,7 +292,7 @@ export default function QuemSomos() {
                                 <div className="w-full md:w-1/2 rounded-2xl overflow-hidden shadow-md bg-gray-100">
                                     <img
                                         src="./src/assets/imgs/quemsomos/aniversario-2-varzea.jpg"
-                                        alt="Dias atuais na Sede Forquilha"
+                                        alt="2º Aniversário"
                                         className="w-full h-48 md:h-64 object-cover hover:scale-105 transition-transform duration-500"
                                     />
                                 </div>
