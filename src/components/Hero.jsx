@@ -32,13 +32,16 @@ export default function Hero() {
                         espaço para você aqui.
                     </p>
 
-                    <a
-                        href=""
+                    <button
+                        type="button"
+                        onClick={() => {
+                            document.getElementById("cultos")?.scrollIntoView({ behavior: "smooth" });
+                        }}
                         className="mt-9 inline-flex items-center gap-3 rounded-full bg-primary px-7 py-4 font-tertiary font-semibold text-white shadow-lg shadow-primary/30 transition-all duration-300 hover:-translate-y-1 hover:bg-quarternary focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-secondary"
                     >
                         Horários dos cultos
                         <span aria-hidden="true" className="text-xl leading-none">→</span>
-                    </a>
+                    </button>
                 </div>
             </div>
         </section>
