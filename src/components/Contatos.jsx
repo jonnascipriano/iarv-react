@@ -8,14 +8,14 @@ export default function Contatos() {
                     Fale Conosco
                 </h1>
                 <p className="font-poppins text-gray-600 max-w-xl">
-                    Queremos ouvir você! Envie uma mensagem ou acompanhe-nos nas redes sociais.
+                    Queremos ouvir você! Faça um pedido de oração ou acompanhe-nos nas redes sociais.
                 </p>
             </div>
 
             <div className="flex flex-col md:flex-row gap-10 w-full max-w-6xl mx-auto px-6 items-stretch justify-center">
             
                 <form className="flex-[2] flex flex-col gap-4 bg-white p-8 rounded-2xl shadow-2xl w-full justify-around">
-                    <h2 className="text-xl font-bold font-busorama text-tertiary mb-2">Formulário de Envio</h2>
+                    <h2 className="text-xl font-bold font-busorama text-tertiary mb-2">Pedido de oração</h2>
 
                     <input
                         className="border border-gray-300 rounded-xl p-2.5 focus:outline-none focus:ring-2 focus:ring-primary transition-all text-sm font-poppins"
