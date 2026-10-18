@@ -90,7 +90,7 @@ export default function QuemSomos() {
                                 </div>
                             </div>
                         </div>
-                        {/* ITEM 5 DA HISTÓRIA - Evangelização*/}
+                        {/* ITEM 4 DA HISTÓRIA - Evangelização*/}
                         <div className="relative pl-8 md:pl-12">
                             <div className="absolute -left-[14px] top-1 w-6 h-6 bg-quarternary rounded-full border-4 border-white shadow-md"></div>
                             <h3 className="font-busorama text-xl text-quarternary font-bold mb-4">Evangelização</h3>
@@ -109,7 +109,7 @@ export default function QuemSomos() {
                                 </div>
                             </div>
                         </div>
-                        {/* ITEM 6 DA HISTÓRIA - Culto*/}
+                        {/* ITEM 5 DA HISTÓRIA - Culto*/}
                         <div className="relative pl-8 md:pl-12">
                             <div className="absolute -left-[14px] top-1 w-6 h-6 bg-tertiary rounded-full border-4 border-white shadow-md"></div>
                             <h3 className="font-busorama text-xl text-tertiary font-bold mb-4">Cultos</h3>
@@ -126,7 +126,7 @@ export default function QuemSomos() {
                                 </div>
                             </div>
                         </div>
-                        {/* ITEM 7 DA HISTÓRIA - Aniversário 1*/}
+                        {/* ITEM 6 DA HISTÓRIA - Aniversário 1*/}
                         <div className="relative pl-8 md:pl-12">
                             <div className="absolute -left-[14px] top-1 w-6 h-6 bg-quarternary rounded-full border-4 border-white shadow-md"></div>
                             <h3 className="font-busorama text-xl text-quarternary font-bold mb-4">1º Aniversário</h3>
@@ -144,7 +144,7 @@ export default function QuemSomos() {
                                 </div>
                             </div>
                         </div>
-                        {/* ITEM 8 DA HISTÓRIA - Reforma*/}
+                        {/* ITEM 7 DA HISTÓRIA - Reforma*/}
                         <div className="relative pl-8 md:pl-12">
                             <div className="absolute -left-[14px] top-1 w-6 h-6 bg-tertiary rounded-full border-4 border-white shadow-md"></div>
                             <h3 className="font-busorama text-xl text-tertiary font-bold mb-4">Reforma - Sede</h3>
@@ -162,7 +162,7 @@ export default function QuemSomos() {
                                 </div>
                             </div>
                         </div>
-                        {/* ITEM 9 DA HISTÓRIA - Varzea da Cobra*/}
+                        {/* ITEM 8 DA HISTÓRIA - Varzea da Cobra*/}
                         <div className="relative pl-8 md:pl-12">
                             <div className="absolute -left-[14px] top-1 w-6 h-6 bg-quarternary rounded-full border-4 border-white shadow-md"></div>
                             <h3 className="font-busorama text-xl text-quarternary font-bold mb-4">Reforma - Várzea da Cobra</h3>
@@ -179,7 +179,7 @@ export default function QuemSomos() {
                                 </div>
                             </div>
                         </div>
-                        {/* ITEM 10 DA HISTÓRIA - Reforma*/}
+                        {/* ITEM 9 DA HISTÓRIA - Reforma*/}
                         <div className="relative pl-8 md:pl-12">
                             <div className="absolute -left-[14px] top-1 w-6 h-6 bg-tertiary rounded-full border-4 border-white shadow-md"></div>
                             <h3 className="font-busorama text-xl text-tertiary font-bold mb-4">Reforma - Varzea da Cobra</h3>
@@ -196,7 +196,7 @@ export default function QuemSomos() {
                                 </div>
                             </div>
                         </div>
-                        {/* ITEM 11 DA HISTÓRIA - Culto 2*/}
+                        {/* ITEM 10 DA HISTÓRIA - Culto 2*/}
                         <div className="relative pl-8 md:pl-12">
                             <div className="absolute -left-[14px] top-1 w-6 h-6 bg-quarternary rounded-full border-4 border-white shadow-md"></div>
                             <h3 className="font-busorama text-xl text-quarternary font-bold mb-4">Culto</h3>
@@ -211,7 +211,7 @@ export default function QuemSomos() {
                                 </div>
                             </div>
                         </div>
-                        {/* ITEM 12 DA HISTÓRIA - Célula - Sobral*/}
+                        {/* ITEM 11 DA HISTÓRIA - Célula - Sobral*/}
                         <div className="relative pl-8 md:pl-12">
                             <div className="absolute -left-[14px] top-1 w-6 h-6 bg-tertiary rounded-full border-4 border-white shadow-md"></div>
                             <h3 className="font-busorama text-xl text-tertiary font-bold mb-4">Células - Sobral</h3>
@@ -227,7 +227,7 @@ export default function QuemSomos() {
                                 </div>
                             </div>
                         </div>
-                        {/* ITEM 13 DA HISTÓRIA - Culto - Sobral*/}
+                        {/* ITEM 12 DA HISTÓRIA - Culto - Sobral*/}
                         <div className="relative pl-8 md:pl-12">
                             <div className="absolute -left-[14px] top-1 w-6 h-6 bg-quarternary rounded-full border-4 border-white shadow-md"></div>
                             <h3 className="font-busorama text-xl text-quarternary font-bold mb-4">Culto - Sobral</h3>
@@ -242,7 +242,7 @@ export default function QuemSomos() {
                                 </div>
                             </div>
                         </div>
-                        {/* ITEM 14 DA HISTÓRIA - Ato profético - Praça da Paz*/}
+                        {/* ITEM 13 DA HISTÓRIA - Ato profético - Praça da Paz*/}
                         <div className="relative pl-8 md:pl-12">
                             <div className="absolute -left-[14px] top-1 w-6 h-6 bg-tertiary rounded-full border-4 border-white shadow-md"></div>
                             <h3 className="font-busorama text-xl text-tertiary font-bold mb-4">Ato profético - Praça da paz</h3>
@@ -257,7 +257,7 @@ export default function QuemSomos() {
                                 </div>
                             </div>
                         </div>
-                        {/* ITEM 15 DA HISTÓRIA - Evangelização 2*/}
+                        {/* ITEM 14 DA HISTÓRIA - Evangelização 2*/}
                         <div className="relative pl-8 md:pl-12">
                             <div className="absolute -left-[14px] top-1 w-6 h-6 bg-quarternary rounded-full border-4 border-white shadow-md"></div>
                             <h3 className="font-busorama text-xl text-quarternary font-bold mb-4">
@@ -277,7 +277,7 @@ export default function QuemSomos() {
                                 </div>
                             </div>
                         </div>
-                        {/* ITEM 16 DA HISTÓRIA - 2º Aniversário - Forquilha*/}
+                        {/* ITEM 15 DA HISTÓRIA - 2º Aniversário - Forquilha*/}
                         <div className="relative pl-8 md:pl-12">
                             <div className="absolute -left-[14px] top-1 w-6 h-6 bg-tertiary rounded-full border-4 border-white shadow-md"></div>
                             <h3 className="font-busorama text-xl text-tertiary font-bold mb-4">2º Aniversário - Forquilha</h3>
@@ -292,7 +292,7 @@ export default function QuemSomos() {
                                 </div>
                             </div>
                         </div>
-                        {/* ITEM 17 DA HISTÓRIA - 2º Aniversário - Sobral*/}
+                        {/* ITEM 16 DA HISTÓRIA - 2º Aniversário - Sobral*/}
                         <div className="relative pl-8 md:pl-12">
                             <div className="absolute -left-[14px] top-1 w-6 h-6 bg-quarternary rounded-full border-4 border-white shadow-md"></div>
                             <h3 className="font-busorama text-xl text-quarternary font-bold mb-4">2º Aniversário - Sobral</h3>
@@ -307,7 +307,7 @@ export default function QuemSomos() {
                                 </div>
                             </div>
                         </div>
-                        {/* ITEM 18 DA HISTÓRIA - 2º Aniversário - Várzea da Cobra*/}
+                        {/* ITEM 17 DA HISTÓRIA - 2º Aniversário - Várzea da Cobra*/}
                         <div className="relative pl-8 md:pl-12">
                             <div className="absolute -left-[14px] top-1 w-6 h-6 bg-tertiary rounded-full border-4 border-white shadow-md"></div>
                             <h3 className="font-busorama text-xl text-tertiary font-bold mb-4">2º Aniversário - Várzea da Cobra</h3>
@@ -322,7 +322,7 @@ export default function QuemSomos() {
                                 </div>
                             </div>
                         </div>
-                        {/* ITEM 19 DA HISTÓRIA - Culto*/}
+                        {/* ITEM 18 DA HISTÓRIA - Culto*/}
                         <div className="relative pl-8 md:pl-12">
                             <div className="absolute -left-[14px] top-1 w-6 h-6 bg-quarternary rounded-full border-4 border-white shadow-md"></div>
                             <h3 className="font-busorama text-xl text-quarternary font-bold mb-4">Nova localização</h3>
@@ -339,7 +339,7 @@ export default function QuemSomos() {
                                 </div>
                             </div>
                         </div>
-                        {/* ITEM 20 DA HISTÓRIA - Culto - Aracatiaçu*/}
+                        {/* ITEM 19 DA HISTÓRIA - Culto - Aracatiaçu*/}
                         <div className="relative pl-8 md:pl-12">
                             <div className="absolute -left-[14px] top-1 w-6 h-6 bg-tertiary rounded-full border-4 border-white shadow-md"></div>
                             <h3 className="font-busorama text-xl text-tertiary font-bold mb-4">Culto Campal - Aracatiaçu</h3>
@@ -356,7 +356,7 @@ export default function QuemSomos() {
                                 </div>
                             </div>
                         </div>
-                        {/* ITEM 21 DA HISTÓRIA - Unção para obreiras*/}
+                        {/* ITEM 20 DA HISTÓRIA - Unção para obreiras*/}
                         <div className="relative pl-8 md:pl-12">
                             <div className="absolute -left-[14px] top-1 w-6 h-6 bg-quarternary rounded-full border-4 border-white shadow-md"></div>
                             <h3 className="font-busorama text-xl text-quarternary font-bold mb-4">Consagração</h3>
@@ -373,7 +373,7 @@ export default function QuemSomos() {
                                 </div>
                             </div>
                         </div>
-                        {/* ITEM 22 DA HISTÓRIA - 3º Aniversário*/}
+                        {/* ITEM 21 DA HISTÓRIA - 3º Aniversário*/}
                         <div className="relative pl-8 md:pl-12">
                             <div className="absolute -left-[14px] top-1 w-6 h-6 bg-tertiary rounded-full border-4 border-white shadow-md"></div>
                             <h3 className="font-busorama text-xl text-tertiary font-bold mb-4">Preparação para o 3º Aniversário</h3>
@@ -390,7 +390,7 @@ export default function QuemSomos() {
                                 </div>
                             </div>
                         </div>
-                        {/* ITEM 23 DA HISTÓRIA - 3º Aniversário*/}
+                        {/* ITEM 22 DA HISTÓRIA - 3º Aniversário*/}
                         <div className="relative pl-8 md:pl-12">
                             <div className="absolute -left-[14px] top-1 w-6 h-6 bg-quarternary rounded-full border-4 border-white shadow-md"></div>
                             <h3 className="font-busorama text-xl text-quarternary font-bold mb-4">3º Aniversário</h3>
@@ -407,7 +407,7 @@ export default function QuemSomos() {
                                 </div>
                             </div>
                         </div>
-                        {/* ITEM 24 DA HISTÓRIA - 3º Aniversário*/}
+                        {/* ITEM 23 DA HISTÓRIA - 3º Aniversário*/}
                         <div className="relative pl-8 md:pl-12">
                             <div className="absolute -left-[14px] top-1 w-6 h-6 bg-tertiary rounded-full border-4 border-white shadow-md"></div>
                             <h3 className="font-busorama text-xl text-tertiary font-bold mb-4">3º Aniversário</h3>
@@ -424,7 +424,7 @@ export default function QuemSomos() {
                                 </div>
                             </div>
                         </div>
-                        {/* ITEM 25 DA HISTÓRIA - Culto campal*/}
+                        {/* ITEM 24 DA HISTÓRIA - Culto campal*/}
                         <div className="relative pl-8 md:pl-12">
                             <div className="absolute -left-[14px] top-1 w-6 h-6 bg-quarternary rounded-full border-4 border-white shadow-md"></div>
                             <h3 className="font-busorama text-xl text-quarternary font-bold mb-4">Culto campal</h3>
@@ -441,7 +441,7 @@ export default function QuemSomos() {
                                 </div>
                             </div>
                         </div>
-                        {/* ITEM 26 DA HISTÓRIA - Culto*/}
+                        {/* ITEM 25 DA HISTÓRIA - Culto*/}
                         <div className="relative pl-8 md:pl-12">
                             <div className="absolute -left-[14px] top-1 w-6 h-6 bg-tertiary rounded-full border-4 border-white shadow-md"></div>
                             <h3 className="font-busorama text-xl text-tertiary font-bold mb-4">Culto</h3>
@@ -457,7 +457,7 @@ export default function QuemSomos() {
                                 </div>
                             </div>
                         </div>
-                        {/* ITEM 27 DA HISTÓRIA - Evangelização*/}
+                        {/* ITEM 26 DA HISTÓRIA - Evangelização*/}
                         <div className="relative pl-8 md:pl-12">
                             <div className="absolute -left-[14px] top-1 w-6 h-6 bg-quarternary rounded-full border-4 border-white shadow-md"></div>
                             <h3 className="font-busorama text-xl text-quarternary font-bold mb-4">Evangelização</h3>
@@ -474,7 +474,7 @@ export default function QuemSomos() {
                                 </div>
                             </div>
                         </div>
-                        {/* ITEM 28 DA HISTÓRIA - 4º Aniversário*/}
+                        {/* ITEM 27 DA HISTÓRIA - 4º Aniversário*/}
                         <div className="relative pl-8 md:pl-12">
                             <div className="absolute -left-[14px] top-1 w-6 h-6 bg-tertiary rounded-full border-4 border-white shadow-md"></div>
                             <h3 className="font-busorama text-xl text-tertiary font-bold mb-4">4º Aniversário</h3>
@@ -491,7 +491,7 @@ export default function QuemSomos() {
                                 </div>
                             </div>
                         </div>
-                        {/* ITEM 29 DA HISTÓRIA - 4º Aniversário*/}
+                        {/* ITEM 28 DA HISTÓRIA - 4º Aniversário*/}
                         <div className="relative pl-8 md:pl-12">
                             <div className="absolute -left-[14px] top-1 w-6 h-6 bg-quarternary rounded-full border-4 border-white shadow-md"></div>
                             <h3 className="font-busorama text-xl text-quarternary font-bold mb-4">4º Aniversário</h3>
@@ -502,12 +502,12 @@ export default function QuemSomos() {
                                     <img
                                         src={imagensDaHistoria["aniversario-4-2.jpg"]}
                                         alt="4º Aniversário"
-                                        className="w-full h-48 md:h-64 object-cover hover:scale-105 transition-transform duration-500"
+                                        className="w-full h-48 md:h-64 hover:scale-105 transition-transform duration-500"
                                     />
                                 </div>
                             </div>
                         </div>
-                        {/* ITEM 30 DA HISTÓRIA - 4º Aniversário - Equipe*/}
+                        {/* ITEM 29 DA HISTÓRIA - 4º Aniversário - Equipe*/}
                         <div className="relative pl-8 md:pl-12">
                             <div className="absolute -left-[14px] top-1 w-6 h-6 bg-tertiary rounded-full border-4 border-white shadow-md"></div>
                             <h3 className="font-busorama text-xl text-tertiary font-bold mb-4">4º Aniversário - Equipe</h3>
@@ -523,7 +523,7 @@ export default function QuemSomos() {
                                 </div>
                             </div>
                         </div>
-                        {/* ITEM 31 DA HISTÓRIA - 4º Aniversário - Consagração*/}
+                        {/* ITEM 30 DA HISTÓRIA - 4º Aniversário - Consagração*/}
                         <div className="relative pl-8 md:pl-12">
                             <div className="absolute -left-[14px] top-1 w-6 h-6 bg-quarternary rounded-full border-4 border-white shadow-md"></div>
                             <h3 className="font-busorama text-xl text-quarternary font-bold mb-4">4º Aniversário - Consagração</h3>
@@ -540,7 +540,7 @@ export default function QuemSomos() {
                                 </div>
                             </div>
                         </div>
-                        {/* ITEM 32 DA HISTÓRIA - 4º Aniversário - Consagração*/}
+                        {/* ITEM 31 DA HISTÓRIA - 4º Aniversário - Consagração*/}
                         <div className="relative pl-8 md:pl-12">
                             <div className="absolute -left-[14px] top-1 w-6 h-6 bg-tertiary rounded-full border-4 border-white shadow-md"></div>
                             <h3 className="font-busorama text-xl text-tertiary font-bold mb-4">4º Aniversário - Consagração</h3>
@@ -557,7 +557,7 @@ export default function QuemSomos() {
                                 </div>
                             </div>
                         </div>
-                        {/* ITEM 33 DA HISTÓRIA - 4º Aniversário - Consagração*/}
+                        {/* ITEM 32 DA HISTÓRIA - 4º Aniversário - Consagração*/}
                         <div className="relative pl-8 md:pl-12">
                             <div className="absolute -left-[14px] top-1 w-6 h-6 bg-quarternary rounded-full border-4 border-white shadow-md"></div>
                             <h3 className="font-busorama text-xl text-quarternary font-bold mb-4">4º Aniversário - Consagração</h3>
@@ -574,7 +574,7 @@ export default function QuemSomos() {
                                 </div>
                             </div>
                         </div>
-                        {/* ITEM 34 DA HISTÓRIA - Ato pela paz de Sobral*/}
+                        {/* ITEM 33 DA HISTÓRIA - Ato pela paz de Sobral*/}
                         <div className="relative pl-8 md:pl-12">
                             <div className="absolute -left-[14px] top-1 w-6 h-6 bg-tertiary rounded-full border-4 border-white shadow-md"></div>
                             <h3 className="font-busorama text-xl text-tertiary font-bold mb-4">Ato profético</h3>
@@ -591,7 +591,7 @@ export default function QuemSomos() {
                                 </div>
                             </div>
                         </div>
-                        {/* ITEM 35 DA HISTÓRIA - Culto*/}
+                        {/* ITEM 34 DA HISTÓRIA - Culto*/}
                         <div className="relative pl-8 md:pl-12">
                             <div className="absolute -left-[14px] top-1 w-6 h-6 bg-quarternary rounded-full border-4 border-white shadow-md"></div>
                             <h3 className="font-busorama text-xl text-quarternary font-bold mb-4">Culto</h3>
@@ -607,7 +607,7 @@ export default function QuemSomos() {
                                 </div>
                             </div>
                         </div>
-                        {/* ITEM 36 DA HISTÓRIA - Pandemia*/}
+                        {/* ITEM 35 DA HISTÓRIA - Pandemia*/}
                         <div className="relative pl-8 md:pl-12">
                             <div className="absolute -left-[14px] top-1 w-6 h-6 bg-tertiary rounded-full border-4 border-white shadow-md"></div>
                             <h3 className="font-busorama text-xl text-tertiary font-bold mb-4">Pandemia</h3>
@@ -624,7 +624,7 @@ export default function QuemSomos() {
                                 </div>
                             </div>
                         </div>
-                        {/* ITEM 37 DA HISTÓRIA - Aniversário Remoto*/}
+                        {/* ITEM 36 DA HISTÓRIA - Aniversário Remoto*/}
                         <div className="relative pl-8 md:pl-12">
                             <div className="absolute -left-[14px] top-1 w-6 h-6 bg-quarternary rounded-full border-4 border-white shadow-md"></div>
                             <h3 className="font-busorama text-xl text-quarternary font-bold mb-4">5º Aniversário</h3>
@@ -641,7 +641,7 @@ export default function QuemSomos() {
                                 </div>
                             </div>
                         </div>
-                        {/* ITEM 38 DA HISTÓRIA - Culto Pandemia*/}
+                        {/* ITEM 37 DA HISTÓRIA - Culto Pandemia*/}
                         <div className="relative pl-8 md:pl-12">
                             <div className="absolute -left-[14px] top-1 w-6 h-6 bg-tertiary rounded-full border-4 border-white shadow-md"></div>
                             <h3 className="font-busorama text-xl text-tertiary font-bold mb-4">Culto</h3>
@@ -657,7 +657,7 @@ export default function QuemSomos() {
                                 </div>
                             </div>
                         </div>
-                        {/* ITEM 39 DA HISTÓRIA - 7º Aniversário*/}
+                        {/* ITEM 38 DA HISTÓRIA - 7º Aniversário*/}
                         <div className="relative pl-8 md:pl-12">
                             <div className="absolute -left-[14px] top-1 w-6 h-6 bg-quarternary rounded-full border-4 border-white shadow-md"></div>
                             <h3 className="font-busorama text-xl text-quarternary font-bold mb-4">7º Aniversário</h3>
@@ -674,7 +674,7 @@ export default function QuemSomos() {
                                 </div>
                             </div>
                         </div>
-                        {/* ITEM 40 DA HISTÓRIA - 7º Aniversário*/}
+                        {/* ITEM 39 DA HISTÓRIA - 7º Aniversário*/}
                         <div className="relative pl-8 md:pl-12">
                             <div className="absolute -left-[14px] top-1 w-6 h-6 bg-tertiary rounded-full border-4 border-white shadow-md"></div>
                             <h3 className="font-busorama text-xl text-tertiary font-bold mb-4">7º Aniversário</h3>
@@ -690,7 +690,7 @@ export default function QuemSomos() {
                                 </div>
                             </div>
                         </div>
-                        {/* ITEM 41 DA HISTÓRIA - 8º Aniversário*/}
+                        {/* ITEM 40 DA HISTÓRIA - 8º Aniversário*/}
                         <div className="relative pl-8 md:pl-12">
                             <div className="absolute -left-[14px] top-1 w-6 h-6 bg-quarternary rounded-full border-4 border-white shadow-md"></div>
                             <h3 className="font-busorama text-xl text-quarternary font-bold mb-4">8º Aniversário</h3>
@@ -707,7 +707,7 @@ export default function QuemSomos() {
                                 </div>
                             </div>
                         </div>
-                        {/* ITEM 42 DA HISTÓRIA - Culto*/}
+                        {/* ITEM 41 DA HISTÓRIA - Culto*/}
                         <div className="relative pl-8 md:pl-12">
                             <div className="absolute -left-[14px] top-1 w-6 h-6 bg-tertiary rounded-full border-4 border-white shadow-md"></div>
                             <h3 className="font-busorama text-xl text-tertiary font-bold mb-4">Culto</h3>
@@ -723,7 +723,7 @@ export default function QuemSomos() {
                                 </div>
                             </div>
                         </div>
-                        {/* ITEM 43 DA HISTÓRIA - 10º Aniversário*/}
+                        {/* ITEM 42 DA HISTÓRIA - 10º Aniversário*/}
                         <div className="relative pl-8 md:pl-12">
                             <div className="absolute -left-[14px] top-1 w-6 h-6 bg-quarternary rounded-full border-4 border-white shadow-md"></div>
                             <h3 className="font-busorama text-xl text-quarternary font-bold mb-4">10º Aniversário</h3>
@@ -740,7 +740,7 @@ export default function QuemSomos() {
                                 </div>
                             </div>
                         </div>
-                        {/* ITEM 44 DA HISTÓRIA - 10º Aniversário*/}
+                        {/* ITEM 43 DA HISTÓRIA - 10º Aniversário*/}
                         <div className="relative pl-8 md:pl-12">
                             <div className="absolute -left-[14px] top-1 w-6 h-6 bg-tertiary rounded-full border-4 border-white shadow-md"></div>
                             <h3 className="font-busorama text-xl text-tertiary font-bold mb-4">10º Aniversário</h3>
@@ -756,7 +756,7 @@ export default function QuemSomos() {
                                 </div>
                             </div>
                         </div>
-                        {/* ITEM 45 DA HISTÓRIA - 10º Aniversário*/}
+                        {/* ITEM 44 DA HISTÓRIA - 10º Aniversário*/}
                         <div className="relative pl-8 md:pl-12">
                             <div className="absolute -left-[14px] top-1 w-6 h-6 bg-quarternary rounded-full border-4 border-white shadow-md"></div>
                             <h3 className="font-busorama text-xl text-quarternary font-bold mb-4">10º Aniversário</h3>
@@ -773,7 +773,7 @@ export default function QuemSomos() {
                                 </div>
                             </div>
                         </div>
-                        {/* ITEM 46 DA HISTÓRIA - Culto*/}
+                        {/* ITEM 45 DA HISTÓRIA - Culto*/}
                         <div className="relative pl-8 md:pl-12">
                             <div className="absolute -left-[14px] top-1 w-6 h-6 bg-tertiary rounded-full border-4 border-white shadow-md"></div>
                             <h3 className="font-busorama text-xl text-tertiary font-bold mb-4">Culto</h3>
@@ -789,7 +789,7 @@ export default function QuemSomos() {
                                 </div>
                             </div>
                         </div>
-                        {/* ITEM 47 DA HISTÓRIA - 11º Aniversário*/}
+                        {/* ITEM 46 DA HISTÓRIA - 11º Aniversário*/}
                         <div className="relative pl-8 md:pl-12">
                             <div className="absolute -left-[14px] top-1 w-6 h-6 bg-quarternary rounded-full border-4 border-white shadow-md"></div>
                             <h3 className="font-busorama text-xl text-quarternary font-bold mb-4">11º Aniversário</h3>
@@ -806,7 +806,7 @@ export default function QuemSomos() {
                                 </div>
                             </div>
                         </div>
-                        {/* ITEM 48 DA HISTÓRIA - 11º Aniversário*/}
+                        {/* ITEM 47 DA HISTÓRIA - 11º Aniversário*/}
                         <div className="relative pl-8 md:pl-12">
                             <div className="absolute -left-[14px] top-1 w-6 h-6 bg-tertiary rounded-full border-4 border-white shadow-md"></div>
                             <h3 className="font-busorama text-xl text-tertiary font-bold mb-4">11º Aniversário</h3>
@@ -823,7 +823,7 @@ export default function QuemSomos() {
                                 </div>
                             </div>
                         </div>
-                        {/* ITEM 49 DA HISTÓRIA - 11º Aniversário*/}
+                        {/* ITEM 48 DA HISTÓRIA - 11º Aniversário*/}
                         <div className="relative pl-8 md:pl-12">
                             <div className="absolute -left-[14px] top-1 w-6 h-6 bg-quarternary rounded-full border-4 border-white shadow-md"></div>
                             <h3 className="font-busorama text-xl text-quarternary font-bold mb-4">11º Aniversário</h3>
@@ -840,7 +840,7 @@ export default function QuemSomos() {
                                 </div>
                             </div>
                         </div>
-                        {/* ITEM 50 DA HISTÓRIA - 11º Aniversário*/}
+                        {/* ITEM 49 DA HISTÓRIA - 11º Aniversário*/}
                         <div className="relative pl-8 md:pl-12">
                             <div className="absolute -left-[14px] top-1 w-6 h-6 bg-tertiary rounded-full border-4 border-white shadow-md"></div>
                             <h3 className="font-busorama text-xl text-tertiary font-bold mb-4">11º Aniversário</h3>
@@ -857,7 +857,7 @@ export default function QuemSomos() {
                                 </div>
                             </div>
                         </div>
-                        {/* ITEM 51 DA HISTÓRIA - 11º Aniversário*/}
+                        {/* ITEM 50 DA HISTÓRIA - 11º Aniversário*/}
                         <div className="relative pl-8 md:pl-12">
                             <div className="absolute -left-[14px] top-1 w-6 h-6 bg-quarternary rounded-full border-4 border-white shadow-md"></div>
                             <h3 className="font-busorama text-xl text-quarternary font-bold mb-4">11º Aniversário</h3>
@@ -874,7 +874,7 @@ export default function QuemSomos() {
                                 </div>
                             </div>
                         </div>
-                        {/* ITEM 52 DA HISTÓRIA - Culto*/}
+                        {/* ITEM 51 DA HISTÓRIA - Culto*/}
                         <div className="relative pl-8 md:pl-12">
                             <div className="absolute -left-[14px] top-1 w-6 h-6 bg-tertiary rounded-full border-4 border-white shadow-md"></div>
                             <h3 className="font-busorama text-xl text-tertiary font-bold mb-4">Culto</h3>
@@ -890,7 +890,7 @@ export default function QuemSomos() {
                                 </div>
                             </div>
                         </div>
-                        {/* ITEM 53 DA HISTÓRIA - 11º Aniversário*/}
+                        {/* ITEM 52 DA HISTÓRIA - 11º Aniversário*/}
                         <div className="relative pl-8 md:pl-12">
                             <div className="absolute -left-[14px] top-1 w-6 h-6 bg-quarternary rounded-full border-4 border-white shadow-md"></div>
                             <h3 className="font-busorama text-xl text-quarternary font-bold mb-4">Dias atuais</h3>
