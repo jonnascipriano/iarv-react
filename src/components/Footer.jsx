@@ -5,6 +5,7 @@ export default function Footer(){
             <p>Desde 2015 - <strong>Igreja Apostólica Restaurando Vidas</strong>.</p>
             <p>CNPJ: 68.617.815/0001-58</p>
             <p>Forquilha, Ceará</p>
+            <p className="mt-5 text-sm text-gray-500">Criado por: <a target="_blank" className="text-primary" href="/instagram.com/jonnascipriano">@jonnascipriano</a></p>
         </footer>
     )
 }
