@@ -401,7 +401,7 @@ export default function QuemSomos() {
                             <h3 className="font-busorama text-xl text-tertiary font-bold mb-4">Culto Campal - Aracatiaçu</h3>
                             <div className="flex flex-col md:flex-row gap-6 items-start">
                                 <p className="font-poppins text-gray-600 leading-relaxed md:w-1/2">
-                                    Á 32km da cidade de Forquilha, fizemos um culto campal em Aracatiaçu, interior de Sobral. Moradores de toda vizinhança pegavam suas cadeiras para ir assistir o culto.
+                                    A 32km da cidade de Forquilha, fizemos um culto campal em Aracatiaçu, interior de Sobral, onde moradores de toda vizinhança pegavam suas cadeiras para ir assistir o culto.
                                 </p>
                                 <div className="w-full md:w-1/2 rounded-2xl overflow-hidden shadow-md bg-gray-100">
                                     <img
@@ -435,7 +435,7 @@ export default function QuemSomos() {
                             <h3 className="font-busorama text-xl text-tertiary font-bold mb-4">Preparação para o 3º Aniversário</h3>
                             <div className="flex flex-col md:flex-row gap-6 items-start">
                                 <p className="font-poppins text-gray-600 leading-relaxed md:w-1/2">
-                                    Fazendo todos os preparativos para o 3º aniversário, no Centro de Convenções em Sobral.
+                                    Organização para o 3º aniversário, no Centro de Convenções em Sobral.
                                 </p>
                                 <div className="w-full md:w-1/2 rounded-2xl overflow-hidden shadow-md bg-gray-100">
                                     <img
@@ -486,7 +486,7 @@ export default function QuemSomos() {
                             <h3 className="font-busorama text-xl text-quarternary font-bold mb-4">Culto campal</h3>
                             <div className="flex flex-col md:flex-row-reverse gap-6 items-start">
                                 <p className="font-poppins text-gray-600 leading-relaxed md:w-1/2">
-                                    Culto realizado no Setor 2
+                                    Culto realizado no Setor 2.
                                 </p>
                                 <div className="w-full md:w-1/2 rounded-2xl overflow-hidden shadow-md bg-gray-100">
                                     <img
@@ -519,7 +519,7 @@ export default function QuemSomos() {
                             <h3 className="font-busorama text-xl text-quarternary font-bold mb-4">Evangelização</h3>
                             <div className="flex flex-col md:flex-row-reverse gap-6 items-start">
                                 <p className="font-poppins text-gray-600 leading-relaxed md:w-1/2">
-                                    Em prol do 4º aniversario, toda a equipe de fé se reuniu para ir as ruas de Forquilha evangelizar, divulgar panfletos, falar da palavra de Deus, e convidar.
+                                    Em prol do 4º aniversario, toda a equipe de fé se reuniu para ir as ruas de Forquilha evangelizar, divulgar panfletos, falar da palavra de Deus e convidar.
                                 </p>
                                 <div className="w-full md:w-1/2 rounded-2xl overflow-hidden shadow-md bg-gray-100">
                                     <img
