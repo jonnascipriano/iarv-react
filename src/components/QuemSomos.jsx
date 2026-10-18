@@ -1,5 +1,23 @@
+import { useEffect, useRef, useState } from "react";
 import Botao from "./Botao";
 import { Link } from "react-router-dom";
+
+const coresDoGradiente = ["#b41216", "#fb5233", "#000000"];
+
+function obterCorDoGradiente(indice, total) {
+    const posicao = (indice / Math.max(total - 1, 1)) * (coresDoGradiente.length - 1);
+    const etapa = Math.min(Math.floor(posicao), coresDoGradiente.length - 2);
+    const proporcao = posicao - etapa;
+    const inicio = Number.parseInt(coresDoGradiente[etapa].slice(1), 16);
+    const fim = Number.parseInt(coresDoGradiente[etapa + 1].slice(1), 16);
+    const canais = [16, 8, 0].map((deslocamento) => {
+        const valorInicio = (inicio >> deslocamento) & 0xff;
+        const valorFim = (fim >> deslocamento) & 0xff;
+        return Math.round(valorInicio + (valorFim - valorInicio) * proporcao);
+    });
+
+    return `#${canais.map((canal) => canal.toString(16).padStart(2, "0")).join("")}`;
+}
 
 const imagensDaHistoria = Object.fromEntries(
     Object.entries(
@@ -12,6 +30,33 @@ const imagensDaHistoria = Object.fromEntries(
     ).map(([caminho, url]) => [caminho.slice(caminho.lastIndexOf("/") + 1), url]),
 );
 export default function QuemSomos() {
+    const linhaDoTempoRef = useRef(null);
+    const [imagemAmpliada, setImagemAmpliada] = useState(null);
+
+    useEffect(() => {
+        const itens = linhaDoTempoRef.current?.querySelectorAll(":scope > div.relative.pl-8");
+
+        itens?.forEach((item, indice) => {
+            const cor = obterCorDoGradiente(indice, itens.length);
+            const bolinha = item.querySelector(":scope > div.absolute");
+            const titulo = item.querySelector(":scope > h3");
+
+            if (bolinha instanceof HTMLElement) bolinha.style.backgroundColor = cor;
+            if (titulo instanceof HTMLElement) titulo.style.color = cor;
+        });
+    }, []);
+
+    useEffect(() => {
+        if (!imagemAmpliada) return undefined;
+
+        function fecharComEscape(evento) {
+            if (evento.key === "Escape") setImagemAmpliada(null);
+        }
+
+        window.addEventListener("keydown", fecharComEscape);
+        return () => window.removeEventListener("keydown", fecharComEscape);
+    }, [imagemAmpliada]);
+
     return (
         <section className="py-20 bg-bg2 flex flex-col items-center w-full px-6 min-h-screen">
             <div className="flex flex-col items-center text-center mb-16">
@@ -28,7 +73,18 @@ export default function QuemSomos() {
                 <div className="w-full bg-white p-8 md:p-12 rounded-3xl shadow-2xl relative mt-8">
                     <h2 className="text-2xl md:text-3xl font-bold font-busorama text-tertiary mb-12 text-center">Nossa História</h2>
 
-                    <div className="relative border-l-4 border-gray-200 ml-4 md:ml-10 flex flex-col gap-16">
+                    <div
+                        ref={linhaDoTempoRef}
+                        className="relative border-l-4 border-gray-200 ml-4 md:ml-10 flex flex-col gap-16 [&_img]:cursor-zoom-in"
+                        onClick={(evento) => {
+                            if (evento.target instanceof HTMLImageElement) {
+                                setImagemAmpliada({
+                                    src: evento.target.currentSrc,
+                                    alt: evento.target.alt,
+                                });
+                            }
+                        }}
+                    >
                         {" "}
                         {/* Aumentei o gap para dar respiro entre os eventos */}
                         {/* ITEM 1 DA HISTÓRIA - Praça de Cuba*/}
@@ -912,6 +968,30 @@ export default function QuemSomos() {
             <Link to="/galeria">
                 <Botao>Veja a galeria da fotos</Botao>
             </Link>
+            {imagemAmpliada && (
+                <div
+                    className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 p-4"
+                    role="dialog"
+                    aria-modal="true"
+                    aria-label="Visualizador de fotos"
+                    onClick={() => setImagemAmpliada(null)}
+                >
+                    <button
+                        type="button"
+                        onClick={() => setImagemAmpliada(null)}
+                        aria-label="Fechar visualizador"
+                        className="absolute right-4 top-4 flex h-11 w-11 items-center justify-center rounded-full bg-white/15 text-3xl text-white transition-colors hover:bg-white/30"
+                    >
+                        &times;
+                    </button>
+                    <img
+                        src={imagemAmpliada.src}
+                        alt={imagemAmpliada.alt}
+                        className="max-h-[90vh] max-w-[95vw] object-contain"
+                        onClick={(evento) => evento.stopPropagation()}
+                    />
+                </div>
+            )}
         </section>
     );
 }
