@@ -1,3 +1,6 @@
+import logoInstagram from '/src/assets/instagram.png'
+import logoFacebook from '/src/assets/facebook.png'
+
 export default function Contatos() {
     return (
         <section className="py-16 bg-bg2 flex flex-col items-center w-full">
@@ -54,13 +57,21 @@ export default function Contatos() {
                         <h2 className="text-lg font-bold font-busorama text-tertiary">Redes Sociais</h2>
                         <div className="flex flex-col gap-4 text-sm font-poppins font-bold text-primary">
 
-                            <a target="_blank" href="https://www.instagram.com/iarvforquilha/" className="hover:text-quarternary transition-colors w-fit">Instagram - Sede</a>
+                            <a target="_blank" href="https://www.instagram.com/iarvforquilha/" className="hover:text-quarternary transition-colors w-fit flex items-center gap-2">
+                                <img className="w-10" src={logoInstagram}/>Instagram - Sede
+                            </a>
 
-                            <a target="_blank" href="https://www.facebook.com/iarv.forquilha?locale=pt_BR" className="hover:text-quarternary transition-colors w-fit">Facebook - Sede</a>
+                            <a target="_blank" href="https://www.instagram.com/iarv_varzea_da_cobra/" className="hover:text-quarternary transition-colors w-fit flex items-center gap-2">
+                                <img className="w-10" src={logoInstagram}/>Instagram - Várzea da Cobra
+                            </a>
 
-                            <a target="_blank" href="https://www.instagram.com/iarv_varzea_da_cobra/" className="hover:text-quarternary transition-colors w-fit">Instagram - Várzea da Cobra</a>
+                            <a target="_blank" href="https://www.facebook.com/iarv.forquilha?locale=pt_BR" className="hover:text-quarternary transition-colors w-fit flex items-center gap-2">
+                                <img className="w-10" src={logoFacebook}/>Facebook - Sede
+                            </a>
 
-                            <a target="_blank" href="https://www.facebook.com/profile.php?id=100006982936819&locale=pt_BR" className="hover:text-quarternary transition-colors w-fit">Facebook - Pr. Júnior Alves</a>
+                            <a target="_blank" href="https://www.facebook.com/profile.php?id=100006982936819&locale=pt_BR" className="hover:text-quarternary transition-colors w-fit flex items-center gap-2">
+                                <img className="w-10" src={logoFacebook}/>Facebook - Pr. Júnior Alves
+                            </a>
                         </div>
                     </div>
 
