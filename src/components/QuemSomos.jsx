@@ -3,14 +3,14 @@ import { Link } from "react-router-dom";
 
 const imagensDaHistoria = Object.fromEntries(
     Object.entries(
-        import.meta.glob("../assets/imgs/quemsomos/*.jpg", {
+        import.meta.glob("../assets/imgs/quemsomos/*.jpg"/**/, {
+            
             eager: true,
             import: "default",
             query: "?url",
         }),
     ).map(([caminho, url]) => [caminho.slice(caminho.lastIndexOf("/") + 1), url]),
 );
-
 export default function QuemSomos() {
     return (
         <section className="py-20 bg-bg2 flex flex-col items-center w-full px-6 min-h-screen">
@@ -40,7 +40,7 @@ export default function QuemSomos() {
                             <div className="flex flex-col md:flex-row gap-6 items-start">
                                 <p className="font-poppins text-gray-600 leading-relaxed md:w-1/2">
                                     Antes mesmo de ser inaugurada na cidade de Forquilha, a IARV já havia nascido na Praça de Cuba em
-                                    Sobral, onde o Pr. Júnior Alves reunia discipulos todas as quartas-feiras para pregar o evangelho.
+                                    Sobral, onde o Pr. Júnior Alves reunia discipulos todas às quartas-feiras para pregar o evangelho.
                                 </p>
                                 {/* Container da Imagem */}
                                 <div className="w-full md:w-1/2 rounded-2xl overflow-hidden shadow-md bg-gray-100">
@@ -211,7 +211,38 @@ export default function QuemSomos() {
                                 </div>
                             </div>
                         </div>
-                        {/* ITEM 12 DA HISTÓRIA - Ato profético - Praça da Paz*/}
+                        {/* ITEM 12 DA HISTÓRIA - Célula - Sobral*/}
+                        <div className="relative pl-8 md:pl-12">
+                            <div className="absolute -left-[14px] top-1 w-6 h-6 bg-tertiary rounded-full border-4 border-white shadow-md"></div>
+                            <h3 className="font-busorama text-xl text-tertiary font-bold mb-4">Células - Sobral</h3>
+                            <div className="flex flex-col md:flex-row gap-6 items-start">
+                                <p className="font-poppins text-gray-600 leading-relaxed md:w-1/2">
+                                </p>
+                                <div className="w-full md:w-1/2 rounded-2xl overflow-hidden shadow-md bg-gray-100">
+                                    <img
+                                        src={imagensDaHistoria["sobral-celula.jpg"]}
+                                        alt="Célula em Sobral"
+                                        className="w-full h-48 md:h-64 object-cover hover:scale-105 transition-transform duration-500"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        {/* ITEM 13 DA HISTÓRIA - Culto - Sobral*/}
+                        <div className="relative pl-8 md:pl-12">
+                            <div className="absolute -left-[14px] top-1 w-6 h-6 bg-quarternary rounded-full border-4 border-white shadow-md"></div>
+                            <h3 className="font-busorama text-xl text-quarternary font-bold mb-4">Culto - Sobral</h3>
+                            <div className="flex flex-col md:flex-row-reverse gap-6 items-start">
+                                <p className="font-poppins text-gray-600 leading-relaxed md:w-1/2"></p>
+                                <div className="w-full md:w-1/2 rounded-2xl overflow-hidden shadow-md bg-gray-100">
+                                    <img
+                                        src={imagensDaHistoria["sobral-culto.jpg"]}
+                                        alt="Culto em Sobral"
+                                        className="w-full h-48 md:h-64 object-cover hover:scale-105 transition-transform duration-500"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        {/* ITEM 14 DA HISTÓRIA - Ato profético - Praça da Paz*/}
                         <div className="relative pl-8 md:pl-12">
                             <div className="absolute -left-[14px] top-1 w-6 h-6 bg-tertiary rounded-full border-4 border-white shadow-md"></div>
                             <h3 className="font-busorama text-xl text-tertiary font-bold mb-4">Ato profético - Praça da paz</h3>
@@ -226,7 +257,7 @@ export default function QuemSomos() {
                                 </div>
                             </div>
                         </div>
-                        {/* ITEM 13 DA HISTÓRIA - Evangelização 2*/}
+                        {/* ITEM 15 DA HISTÓRIA - Evangelização 2*/}
                         <div className="relative pl-8 md:pl-12">
                             <div className="absolute -left-[14px] top-1 w-6 h-6 bg-quarternary rounded-full border-4 border-white shadow-md"></div>
                             <h3 className="font-busorama text-xl text-quarternary font-bold mb-4">
@@ -246,7 +277,7 @@ export default function QuemSomos() {
                                 </div>
                             </div>
                         </div>
-                        {/* ITEM 14 DA HISTÓRIA - 2º Aniversário - Forquilha*/}
+                        {/* ITEM 16 DA HISTÓRIA - 2º Aniversário - Forquilha*/}
                         <div className="relative pl-8 md:pl-12">
                             <div className="absolute -left-[14px] top-1 w-6 h-6 bg-tertiary rounded-full border-4 border-white shadow-md"></div>
                             <h3 className="font-busorama text-xl text-tertiary font-bold mb-4">2º Aniversário - Forquilha</h3>
@@ -261,7 +292,7 @@ export default function QuemSomos() {
                                 </div>
                             </div>
                         </div>
-                        {/* ITEM 15 DA HISTÓRIA - 2º Aniversário - Sobral*/}
+                        {/* ITEM 17 DA HISTÓRIA - 2º Aniversário - Sobral*/}
                         <div className="relative pl-8 md:pl-12">
                             <div className="absolute -left-[14px] top-1 w-6 h-6 bg-quarternary rounded-full border-4 border-white shadow-md"></div>
                             <h3 className="font-busorama text-xl text-quarternary font-bold mb-4">2º Aniversário - Sobral</h3>
@@ -276,7 +307,7 @@ export default function QuemSomos() {
                                 </div>
                             </div>
                         </div>
-                        {/* ITEM 16 DA HISTÓRIA - 2º Aniversário - Várzea da Cobra*/}
+                        {/* ITEM 18 DA HISTÓRIA - 2º Aniversário - Várzea da Cobra*/}
                         <div className="relative pl-8 md:pl-12">
                             <div className="absolute -left-[14px] top-1 w-6 h-6 bg-tertiary rounded-full border-4 border-white shadow-md"></div>
                             <h3 className="font-busorama text-xl text-tertiary font-bold mb-4">2º Aniversário - Várzea da Cobra</h3>
@@ -286,6 +317,590 @@ export default function QuemSomos() {
                                     <img
                                         src={imagensDaHistoria["aniversario-2-varzea.jpg"]}
                                         alt="2º Aniversário"
+                                        className="w-full h-48 md:h-64 object-cover hover:scale-105 transition-transform duration-500"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        {/* ITEM 19 DA HISTÓRIA - Culto*/}
+                        <div className="relative pl-8 md:pl-12">
+                            <div className="absolute -left-[14px] top-1 w-6 h-6 bg-quarternary rounded-full border-4 border-white shadow-md"></div>
+                            <h3 className="font-busorama text-xl text-quarternary font-bold mb-4">Nova localização</h3>
+                            <div className="flex flex-col md:flex-row-reverse gap-6 items-start">
+                                <p className="font-poppins text-gray-600 leading-relaxed md:w-1/2">
+                                    Em 2017 mudamos de localização, saimos do Bairro Cidade de Deus, e fomos para o Centro.
+                                </p>
+                                <div className="w-full md:w-1/2 rounded-2xl overflow-hidden shadow-md bg-gray-100">
+                                    <img
+                                        src={imagensDaHistoria["culto-3.jpg"]}
+                                        alt="Culto em nova localização"
+                                        className="w-full h-48 md:h-64 object-cover hover:scale-105 transition-transform duration-500"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        {/* ITEM 20 DA HISTÓRIA - Culto - Aracatiaçu*/}
+                        <div className="relative pl-8 md:pl-12">
+                            <div className="absolute -left-[14px] top-1 w-6 h-6 bg-tertiary rounded-full border-4 border-white shadow-md"></div>
+                            <h3 className="font-busorama text-xl text-tertiary font-bold mb-4">Culto Campal - Aracatiaçu</h3>
+                            <div className="flex flex-col md:flex-row gap-6 items-start">
+                                <p className="font-poppins text-gray-600 leading-relaxed md:w-1/2">
+                                    Á 32km da cidade de Forquilha, fizemos um culto campal em Aracatiaçu, interior de Sobral. Moradores de toda vizinhança pegavam suas cadeiras para ir assistir o culto.
+                                </p>
+                                <div className="w-full md:w-1/2 rounded-2xl overflow-hidden shadow-md bg-gray-100">
+                                    <img
+                                        src={imagensDaHistoria["aracatiacu-culto.jpg"]}
+                                        alt="Culto campal em Aracatiaçu, interior de Sobral"
+                                        className="w-full h-48 md:h-64 object-cover hover:scale-105 transition-transform duration-500"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        {/* ITEM 21 DA HISTÓRIA - Unção para obreiras*/}
+                        <div className="relative pl-8 md:pl-12">
+                            <div className="absolute -left-[14px] top-1 w-6 h-6 bg-quarternary rounded-full border-4 border-white shadow-md"></div>
+                            <h3 className="font-busorama text-xl text-quarternary font-bold mb-4">Consagração</h3>
+                            <div className="flex flex-col md:flex-row-reverse gap-6 items-start">
+                                <p className="font-poppins text-gray-600 leading-relaxed md:w-1/2">
+                                    Consagração de obreiras para a cidade de Sobral.
+                                </p>
+                                <div className="w-full md:w-1/2 rounded-2xl overflow-hidden shadow-md bg-gray-100">
+                                    <img
+                                        src={imagensDaHistoria["uncao-obreiras-sobral.jpg"]}
+                                        alt="consagração de obreiras"
+                                        className="w-full h-48 md:h-64 object-cover hover:scale-105 transition-transform duration-500"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        {/* ITEM 22 DA HISTÓRIA - 3º Aniversário*/}
+                        <div className="relative pl-8 md:pl-12">
+                            <div className="absolute -left-[14px] top-1 w-6 h-6 bg-tertiary rounded-full border-4 border-white shadow-md"></div>
+                            <h3 className="font-busorama text-xl text-tertiary font-bold mb-4">Preparação para o 3º Aniversário</h3>
+                            <div className="flex flex-col md:flex-row gap-6 items-start">
+                                <p className="font-poppins text-gray-600 leading-relaxed md:w-1/2">
+                                    Fazendo todos os preparativos para o 3º aniversário, no Centro de Convenções em Sobral.
+                                </p>
+                                <div className="w-full md:w-1/2 rounded-2xl overflow-hidden shadow-md bg-gray-100">
+                                    <img
+                                        src={imagensDaHistoria["aniversario-3-bastidores.jpg"]}
+                                        alt="bastidores do 3º aniversario"
+                                        className="w-full h-48 md:h-64 object-cover hover:scale-105 transition-transform duration-500"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        {/* ITEM 23 DA HISTÓRIA - 3º Aniversário*/}
+                        <div className="relative pl-8 md:pl-12">
+                            <div className="absolute -left-[14px] top-1 w-6 h-6 bg-quarternary rounded-full border-4 border-white shadow-md"></div>
+                            <h3 className="font-busorama text-xl text-quarternary font-bold mb-4">3º Aniversário</h3>
+                            <div className="flex flex-col md:flex-row-reverse gap-6 items-start">
+                                <p className="font-poppins text-gray-600 leading-relaxed md:w-1/2">
+                                    Celebração ao 3º Aniversário.
+                                </p>
+                                <div className="w-full md:w-1/2 rounded-2xl overflow-hidden shadow-md bg-gray-100">
+                                    <img
+                                        src={imagensDaHistoria["aniversario-3.jpg"]}
+                                        alt="3º aniversario"
+                                        className="w-full h-48 md:h-64 object-cover hover:scale-105 transition-transform duration-500"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        {/* ITEM 24 DA HISTÓRIA - 3º Aniversário*/}
+                        <div className="relative pl-8 md:pl-12">
+                            <div className="absolute -left-[14px] top-1 w-6 h-6 bg-tertiary rounded-full border-4 border-white shadow-md"></div>
+                            <h3 className="font-busorama text-xl text-tertiary font-bold mb-4">3º Aniversário</h3>
+                            <div className="flex flex-col md:flex-row gap-6 items-start">
+                                <p className="font-poppins text-gray-600 leading-relaxed md:w-1/2">
+                                    Celebração do 3º aniversário.
+                                </p>
+                                <div className="w-full md:w-1/2 rounded-2xl overflow-hidden shadow-md bg-gray-100">
+                                    <img
+                                        src={imagensDaHistoria["aniversario-3-2.jpg"]}
+                                        alt="3º aniversario"
+                                        className="w-full h-48 md:h-64 object-cover hover:scale-105 transition-transform duration-500"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        {/* ITEM 25 DA HISTÓRIA - Culto campal*/}
+                        <div className="relative pl-8 md:pl-12">
+                            <div className="absolute -left-[14px] top-1 w-6 h-6 bg-quarternary rounded-full border-4 border-white shadow-md"></div>
+                            <h3 className="font-busorama text-xl text-quarternary font-bold mb-4">Culto campal</h3>
+                            <div className="flex flex-col md:flex-row-reverse gap-6 items-start">
+                                <p className="font-poppins text-gray-600 leading-relaxed md:w-1/2">
+                                    Culto realizado no Setor 2
+                                </p>
+                                <div className="w-full md:w-1/2 rounded-2xl overflow-hidden shadow-md bg-gray-100">
+                                    <img
+                                        src={imagensDaHistoria["culto-campal.jpg"]}
+                                        alt="Culto campal em setor 2"
+                                        className="w-full h-48 md:h-64 object-cover hover:scale-105 transition-transform duration-500"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        {/* ITEM 26 DA HISTÓRIA - Culto*/}
+                        <div className="relative pl-8 md:pl-12">
+                            <div className="absolute -left-[14px] top-1 w-6 h-6 bg-tertiary rounded-full border-4 border-white shadow-md"></div>
+                            <h3 className="font-busorama text-xl text-tertiary font-bold mb-4">Culto</h3>
+                            <div className="flex flex-col md:flex-row gap-6 items-start">
+                                <p className="font-poppins text-gray-600 leading-relaxed md:w-1/2">
+                                </p>
+                                <div className="w-full md:w-1/2 rounded-2xl overflow-hidden shadow-md bg-gray-100">
+                                    <img
+                                        src={imagensDaHistoria["culto-4.jpg"]}
+                                        alt="3º aniversario"
+                                        className="w-full h-48 md:h-64 object-cover hover:scale-105 transition-transform duration-500"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        {/* ITEM 27 DA HISTÓRIA - Evangelização*/}
+                        <div className="relative pl-8 md:pl-12">
+                            <div className="absolute -left-[14px] top-1 w-6 h-6 bg-quarternary rounded-full border-4 border-white shadow-md"></div>
+                            <h3 className="font-busorama text-xl text-quarternary font-bold mb-4">Evangelização</h3>
+                            <div className="flex flex-col md:flex-row-reverse gap-6 items-start">
+                                <p className="font-poppins text-gray-600 leading-relaxed md:w-1/2">
+                                    Em prol do 4º aniversario, toda a equipe de fé se reuniu para ir as ruas de Forquilha evangelizar, divulgar panfletos, falar da palavra de Deus, e convidar.
+                                </p>
+                                <div className="w-full md:w-1/2 rounded-2xl overflow-hidden shadow-md bg-gray-100">
+                                    <img
+                                        src={imagensDaHistoria["evangelizacao-3.jpg"]}
+                                        alt="evangelização em prol do 4º aniversario"
+                                        className="w-full h-48 md:h-64 object-cover hover:scale-105 transition-transform duration-500"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        {/* ITEM 28 DA HISTÓRIA - 4º Aniversário*/}
+                        <div className="relative pl-8 md:pl-12">
+                            <div className="absolute -left-[14px] top-1 w-6 h-6 bg-tertiary rounded-full border-4 border-white shadow-md"></div>
+                            <h3 className="font-busorama text-xl text-tertiary font-bold mb-4">4º Aniversário</h3>
+                            <div className="flex flex-col md:flex-row gap-6 items-start">
+                                <p className="font-poppins text-gray-600 leading-relaxed md:w-1/2">
+                                Realizado no Ginásio Poli Esportivo em Forquilha - CE
+                                </p>
+                                <div className="w-full md:w-1/2 rounded-2xl overflow-hidden shadow-md bg-gray-100">
+                                    <img
+                                        src={imagensDaHistoria["aniversario-4.jpg"]}
+                                        alt="4º aniversario"
+                                        className="w-full h-48 md:h-64 object-cover hover:scale-105 transition-transform duration-500"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        {/* ITEM 29 DA HISTÓRIA - 4º Aniversário*/}
+                        <div className="relative pl-8 md:pl-12">
+                            <div className="absolute -left-[14px] top-1 w-6 h-6 bg-quarternary rounded-full border-4 border-white shadow-md"></div>
+                            <h3 className="font-busorama text-xl text-quarternary font-bold mb-4">4º Aniversário</h3>
+                            <div className="flex flex-col md:flex-row-reverse gap-6 items-start">
+                                <p className="font-poppins text-gray-600 leading-relaxed md:w-1/2">
+                                </p>
+                                <div className="w-full md:w-1/2 rounded-2xl overflow-hidden shadow-md bg-gray-100">
+                                    <img
+                                        src={imagensDaHistoria["aniversario-4-2.jpg"]}
+                                        alt="4º Aniversário"
+                                        className="w-full h-48 md:h-64 object-cover hover:scale-105 transition-transform duration-500"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        {/* ITEM 30 DA HISTÓRIA - 4º Aniversário - Equipe*/}
+                        <div className="relative pl-8 md:pl-12">
+                            <div className="absolute -left-[14px] top-1 w-6 h-6 bg-tertiary rounded-full border-4 border-white shadow-md"></div>
+                            <h3 className="font-busorama text-xl text-tertiary font-bold mb-4">4º Aniversário - Equipe</h3>
+                            <div className="flex flex-col md:flex-row gap-6 items-start">
+                                <p className="font-poppins text-gray-600 leading-relaxed md:w-1/2">
+                                </p>
+                                <div className="w-full md:w-1/2 rounded-2xl overflow-hidden shadow-md bg-gray-100">
+                                    <img
+                                        src={imagensDaHistoria["aniversario-4-equipe.jpg"]}
+                                        alt="4º aniversario - equipe"
+                                        className="w-full h-48 md:h-64 object-cover hover:scale-105 transition-transform duration-500"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        {/* ITEM 31 DA HISTÓRIA - 4º Aniversário - Consagração*/}
+                        <div className="relative pl-8 md:pl-12">
+                            <div className="absolute -left-[14px] top-1 w-6 h-6 bg-quarternary rounded-full border-4 border-white shadow-md"></div>
+                            <h3 className="font-busorama text-xl text-quarternary font-bold mb-4">4º Aniversário - Consagração</h3>
+                            <div className="flex flex-col md:flex-row-reverse gap-6 items-start">
+                                <p className="font-poppins text-gray-600 leading-relaxed md:w-1/2">
+                                Consagração para Obreiros, Diáconos e Presbíteros.
+                                </p>
+                                <div className="w-full md:w-1/2 rounded-2xl overflow-hidden shadow-md bg-gray-100">
+                                    <img
+                                        src={imagensDaHistoria["aniversario-4-consagracao.jpg"]}
+                                        alt="4º Aniversário - consagração"
+                                        className="w-full h-48 md:h-64 object-cover hover:scale-105 transition-transform duration-500"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        {/* ITEM 32 DA HISTÓRIA - 4º Aniversário - Consagração*/}
+                        <div className="relative pl-8 md:pl-12">
+                            <div className="absolute -left-[14px] top-1 w-6 h-6 bg-tertiary rounded-full border-4 border-white shadow-md"></div>
+                            <h3 className="font-busorama text-xl text-tertiary font-bold mb-4">4º Aniversário - Consagração</h3>
+                            <div className="flex flex-col md:flex-row gap-6 items-start">
+                                <p className="font-poppins text-gray-600 leading-relaxed md:w-1/2">
+                                    Consagração para Obreiros, Diáconos e Presbíteros.
+                                </p>
+                                <div className="w-full md:w-1/2 rounded-2xl overflow-hidden shadow-md bg-gray-100">
+                                    <img
+                                        src={imagensDaHistoria["aniversario-4-consagracao-2.jpg"]}
+                                        alt="4º aniversario - Consagração"
+                                        className="w-full h-48 object-cover md:h-64 hover:scale-105 transition-transform duration-500"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        {/* ITEM 33 DA HISTÓRIA - 4º Aniversário - Consagração*/}
+                        <div className="relative pl-8 md:pl-12">
+                            <div className="absolute -left-[14px] top-1 w-6 h-6 bg-quarternary rounded-full border-4 border-white shadow-md"></div>
+                            <h3 className="font-busorama text-xl text-quarternary font-bold mb-4">4º Aniversário - Consagração</h3>
+                            <div className="flex flex-col md:flex-row-reverse gap-6 items-start">
+                                <p className="font-poppins text-gray-600 leading-relaxed md:w-1/2">
+                                    Consagração para Obreiros, Diáconos e Presbíteros.
+                                </p>
+                                <div className="w-full md:w-1/2 rounded-2xl overflow-hidden shadow-md bg-gray-100">
+                                    <img
+                                        src={imagensDaHistoria["aniversario-4-consagracao-3.jpg"]}
+                                        alt="4º Aniversário - consagração"
+                                        className="w-full h-48 md:h-64 object-cover hover:scale-105 transition-transform duration-500"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        {/* ITEM 34 DA HISTÓRIA - Ato pela paz de Sobral*/}
+                        <div className="relative pl-8 md:pl-12">
+                            <div className="absolute -left-[14px] top-1 w-6 h-6 bg-tertiary rounded-full border-4 border-white shadow-md"></div>
+                            <h3 className="font-busorama text-xl text-tertiary font-bold mb-4">Ato profético</h3>
+                            <div className="flex flex-col md:flex-row gap-6 items-start">
+                                <p className="font-poppins text-gray-600 leading-relaxed md:w-1/2">
+                                    Em prol da paz de Sobral, fomos às ruas do bairro Vila União e Terrenos Novos fazer um ato profético.
+                                </p>
+                                <div className="w-full md:w-1/2 rounded-2xl overflow-hidden shadow-md bg-gray-100">
+                                    <img
+                                        src={imagensDaHistoria["sobral-ato-oracao-paz.jpg"]}
+                                        alt="oração nas ruas de sobral"
+                                        className="w-full h-48 object-cover md:h-64 hover:scale-105 transition-transform duration-500"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        {/* ITEM 35 DA HISTÓRIA - Culto*/}
+                        <div className="relative pl-8 md:pl-12">
+                            <div className="absolute -left-[14px] top-1 w-6 h-6 bg-quarternary rounded-full border-4 border-white shadow-md"></div>
+                            <h3 className="font-busorama text-xl text-quarternary font-bold mb-4">Culto</h3>
+                            <div className="flex flex-col md:flex-row-reverse gap-6 items-start">
+                                <p className="font-poppins text-gray-600 leading-relaxed md:w-1/2">
+                                </p>
+                                <div className="w-full md:w-1/2 rounded-2xl overflow-hidden shadow-md bg-gray-100">
+                                    <img
+                                        src={imagensDaHistoria["culto-5.jpg"]}
+                                        alt="4º Aniversário - consagração"
+                                        className="w-full h-48 md:h-64 object-cover hover:scale-105 transition-transform duration-500"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        {/* ITEM 36 DA HISTÓRIA - Pandemia*/}
+                        <div className="relative pl-8 md:pl-12">
+                            <div className="absolute -left-[14px] top-1 w-6 h-6 bg-tertiary rounded-full border-4 border-white shadow-md"></div>
+                            <h3 className="font-busorama text-xl text-tertiary font-bold mb-4">Pandemia</h3>
+                            <div className="flex flex-col md:flex-row gap-6 items-start">
+                                <p className="font-poppins text-gray-600 leading-relaxed md:w-1/2">
+                                    Em 2020 houve a pandemia e por um bom tempo nossos cultos foram através de Live pelo Facebook.
+                                </p>
+                                <div className="w-full md:w-1/2 rounded-2xl overflow-hidden shadow-md bg-gray-100">
+                                    <img
+                                        src={imagensDaHistoria["pandemia.jpg"]}
+                                        alt="pandemia"
+                                        className="w-full h-48 object-cover md:h-64 hover:scale-105 transition-transform duration-500"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        {/* ITEM 37 DA HISTÓRIA - Aniversário Remoto*/}
+                        <div className="relative pl-8 md:pl-12">
+                            <div className="absolute -left-[14px] top-1 w-6 h-6 bg-quarternary rounded-full border-4 border-white shadow-md"></div>
+                            <h3 className="font-busorama text-xl text-quarternary font-bold mb-4">5º Aniversário</h3>
+                            <div className="flex flex-col md:flex-row-reverse gap-6 items-start">
+                                <p className="font-poppins text-gray-600 leading-relaxed md:w-1/2">
+                                    Comemoramos o 5º aniversario remotamente, também através de live pelo Facebook. Devido ao forte impacto da pandemia no ano seguinte, não comemoramos o 6º aniversario.
+                                </p>
+                                <div className="w-full md:w-1/2 rounded-2xl overflow-hidden shadow-md bg-gray-100">
+                                    <img
+                                        src={imagensDaHistoria["aniversario-5.jpg"]}
+                                        alt="5º Aniversário - Remoto"
+                                        className="w-full h-48 md:h-64 object-cover hover:scale-105 transition-transform duration-500"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        {/* ITEM 38 DA HISTÓRIA - Culto Pandemia*/}
+                        <div className="relative pl-8 md:pl-12">
+                            <div className="absolute -left-[14px] top-1 w-6 h-6 bg-tertiary rounded-full border-4 border-white shadow-md"></div>
+                            <h3 className="font-busorama text-xl text-tertiary font-bold mb-4">Culto</h3>
+                            <div className="flex flex-col md:flex-row gap-6 items-start">
+                                <p className="font-poppins text-gray-600 leading-relaxed md:w-1/2">
+                                </p>
+                                <div className="w-full md:w-1/2 rounded-2xl overflow-hidden shadow-md bg-gray-100">
+                                    <img
+                                        src={imagensDaHistoria["culto-6.jpg"]}
+                                        alt="pandemia"
+                                        className="w-full h-48 object-cover md:h-64 hover:scale-105 transition-transform duration-500"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        {/* ITEM 39 DA HISTÓRIA - 7º Aniversário*/}
+                        <div className="relative pl-8 md:pl-12">
+                            <div className="absolute -left-[14px] top-1 w-6 h-6 bg-quarternary rounded-full border-4 border-white shadow-md"></div>
+                            <h3 className="font-busorama text-xl text-quarternary font-bold mb-4">7º Aniversário</h3>
+                            <div className="flex flex-col md:flex-row-reverse gap-6 items-start">
+                                <p className="font-poppins text-gray-600 leading-relaxed md:w-1/2">
+                                    Celebração ao 7º Aniversário, com participação especial do Pr. Jessé e banda Haziel.
+                                </p>
+                                <div className="w-full md:w-1/2 rounded-2xl overflow-hidden shadow-md bg-gray-100">
+                                    <img
+                                        src={imagensDaHistoria["aniversario-7.jpg"]}
+                                        alt="7º Aniversário"
+                                        className="w-full h-48 md:h-64 object-cover hover:scale-105 transition-transform duration-500"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        {/* ITEM 40 DA HISTÓRIA - 7º Aniversário*/}
+                        <div className="relative pl-8 md:pl-12">
+                            <div className="absolute -left-[14px] top-1 w-6 h-6 bg-tertiary rounded-full border-4 border-white shadow-md"></div>
+                            <h3 className="font-busorama text-xl text-tertiary font-bold mb-4">7º Aniversário</h3>
+                            <div className="flex flex-col md:flex-row gap-6 items-start">
+                                <p className="font-poppins text-gray-600 leading-relaxed md:w-1/2">
+                                </p>
+                                <div className="w-full md:w-1/2 rounded-2xl overflow-hidden shadow-md bg-gray-100">
+                                    <img
+                                        src={imagensDaHistoria["aniversario-7-2.jpg"]}
+                                        alt="7º aniversario"
+                                        className="w-full h-48 object-cover md:h-64 hover:scale-105 transition-transform duration-500"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        {/* ITEM 41 DA HISTÓRIA - 8º Aniversário*/}
+                        <div className="relative pl-8 md:pl-12">
+                            <div className="absolute -left-[14px] top-1 w-6 h-6 bg-quarternary rounded-full border-4 border-white shadow-md"></div>
+                            <h3 className="font-busorama text-xl text-quarternary font-bold mb-4">8º Aniversário</h3>
+                            <div className="flex flex-col md:flex-row-reverse gap-6 items-start">
+                                <p className="font-poppins text-gray-600 leading-relaxed md:w-1/2">
+                                    Celebração ao 8º Aniversário, com participação especial do Pr Erivaldo Ferreira.
+                                </p>
+                                <div className="w-full md:w-1/2 rounded-2xl overflow-hidden shadow-md bg-gray-100">
+                                    <img
+                                        src={imagensDaHistoria["aniversario-8.jpg"]}
+                                        alt="8º Aniversário"
+                                        className="w-full h-48 md:h-64 hover:scale-105 transition-transform duration-500"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        {/* ITEM 42 DA HISTÓRIA - Culto*/}
+                        <div className="relative pl-8 md:pl-12">
+                            <div className="absolute -left-[14px] top-1 w-6 h-6 bg-tertiary rounded-full border-4 border-white shadow-md"></div>
+                            <h3 className="font-busorama text-xl text-tertiary font-bold mb-4">Culto</h3>
+                            <div className="flex flex-col md:flex-row gap-6 items-start">
+                                <p className="font-poppins text-gray-600 leading-relaxed md:w-1/2">
+                                </p>
+                                <div className="w-full md:w-1/2 rounded-2xl overflow-hidden shadow-md bg-gray-100">
+                                    <img
+                                        src={imagensDaHistoria["culto-7.jpg"]}
+                                        alt="culto"
+                                        className="w-full h-48 md:h-64 hover:scale-105 transition-transform duration-500"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        {/* ITEM 43 DA HISTÓRIA - 10º Aniversário*/}
+                        <div className="relative pl-8 md:pl-12">
+                            <div className="absolute -left-[14px] top-1 w-6 h-6 bg-quarternary rounded-full border-4 border-white shadow-md"></div>
+                            <h3 className="font-busorama text-xl text-quarternary font-bold mb-4">10º Aniversário</h3>
+                            <div className="flex flex-col md:flex-row-reverse gap-6 items-start">
+                                <p className="font-poppins text-gray-600 leading-relaxed md:w-1/2">
+                                    Celebração ao 10º Aniversário.
+                                </p>
+                                <div className="w-full md:w-1/2 rounded-2xl overflow-hidden shadow-md bg-gray-100">
+                                    <img
+                                        src={imagensDaHistoria["aniversario-10.jpg"]}
+                                        alt="10º Aniversário"
+                                        className="w-full h-48 md:h-64 hover:scale-105 transition-transform duration-500"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        {/* ITEM 44 DA HISTÓRIA - 10º Aniversário*/}
+                        <div className="relative pl-8 md:pl-12">
+                            <div className="absolute -left-[14px] top-1 w-6 h-6 bg-tertiary rounded-full border-4 border-white shadow-md"></div>
+                            <h3 className="font-busorama text-xl text-tertiary font-bold mb-4">10º Aniversário</h3>
+                            <div className="flex flex-col md:flex-row gap-6 items-start">
+                                <p className="font-poppins text-gray-600 leading-relaxed md:w-1/2">
+                                </p>
+                                <div className="w-full md:w-1/2 rounded-2xl overflow-hidden shadow-md bg-gray-100">
+                                    <img
+                                        src={imagensDaHistoria["aniversario-10-2.jpg"]}
+                                        alt="10º aniversario"
+                                        className="w-full h-48 md:h-64 object-cover hover:scale-105 transition-transform duration-500"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        {/* ITEM 45 DA HISTÓRIA - 10º Aniversário*/}
+                        <div className="relative pl-8 md:pl-12">
+                            <div className="absolute -left-[14px] top-1 w-6 h-6 bg-quarternary rounded-full border-4 border-white shadow-md"></div>
+                            <h3 className="font-busorama text-xl text-quarternary font-bold mb-4">10º Aniversário</h3>
+                            <div className="flex flex-col md:flex-row-reverse gap-6 items-start">
+                                <p className="font-poppins text-gray-600 leading-relaxed md:w-1/2">
+                                    Celebração ao 10º Aniversário.
+                                </p>
+                                <div className="w-full md:w-1/2 rounded-2xl overflow-hidden shadow-md bg-gray-100">
+                                    <img
+                                        src={imagensDaHistoria["aniversario-10-3.jpg"]}
+                                        alt="10º Aniversário"
+                                        className="w-full h-48 md:h-64 object-cover hover:scale-105 transition-transform duration-500"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        {/* ITEM 46 DA HISTÓRIA - Culto*/}
+                        <div className="relative pl-8 md:pl-12">
+                            <div className="absolute -left-[14px] top-1 w-6 h-6 bg-tertiary rounded-full border-4 border-white shadow-md"></div>
+                            <h3 className="font-busorama text-xl text-tertiary font-bold mb-4">Culto</h3>
+                            <div className="flex flex-col md:flex-row gap-6 items-start">
+                                <p className="font-poppins text-gray-600 leading-relaxed md:w-1/2">
+                                </p>
+                                <div className="w-full md:w-1/2 rounded-2xl overflow-hidden shadow-md bg-gray-100">
+                                    <img
+                                        src={imagensDaHistoria["culto-8.jpg"]}
+                                        alt="Culto"
+                                        className="w-full h-48 md:h-64 object-cover hover:scale-105 transition-transform duration-500"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        {/* ITEM 47 DA HISTÓRIA - 11º Aniversário*/}
+                        <div className="relative pl-8 md:pl-12">
+                            <div className="absolute -left-[14px] top-1 w-6 h-6 bg-quarternary rounded-full border-4 border-white shadow-md"></div>
+                            <h3 className="font-busorama text-xl text-quarternary font-bold mb-4">11º Aniversário</h3>
+                            <div className="flex flex-col md:flex-row-reverse gap-6 items-start">
+                                <p className="font-poppins text-gray-600 leading-relaxed md:w-1/2">
+                                    Celebração ao 11º Aniversário.
+                                </p>
+                                <div className="w-full md:w-1/2 rounded-2xl overflow-hidden shadow-md bg-gray-100">
+                                    <img
+                                        src={imagensDaHistoria["aniversario-11.jpg"]}
+                                        alt="11º Aniversário"
+                                        className="w-full h-48 md:h-64 hover:scale-105 transition-transform duration-500"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        {/* ITEM 48 DA HISTÓRIA - 11º Aniversário*/}
+                        <div className="relative pl-8 md:pl-12">
+                            <div className="absolute -left-[14px] top-1 w-6 h-6 bg-tertiary rounded-full border-4 border-white shadow-md"></div>
+                            <h3 className="font-busorama text-xl text-tertiary font-bold mb-4">11º Aniversário</h3>
+                            <div className="flex flex-col md:flex-row gap-6 items-start">
+                                <p className="font-poppins text-gray-600 leading-relaxed md:w-1/2">
+                                    Celebração ao 11º aniversario com participação especial do Pr Paulo Roberto.
+                                </p>
+                                <div className="w-full md:w-1/2 rounded-2xl overflow-hidden shadow-md bg-gray-100">
+                                    <img
+                                        src={imagensDaHistoria["aniversario-11-2.jpg"]}
+                                        alt="11º aniversário"
+                                        className="w-full h-48 md:h-64 object-cover hover:scale-105 transition-transform duration-500"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        {/* ITEM 49 DA HISTÓRIA - 11º Aniversário*/}
+                        <div className="relative pl-8 md:pl-12">
+                            <div className="absolute -left-[14px] top-1 w-6 h-6 bg-quarternary rounded-full border-4 border-white shadow-md"></div>
+                            <h3 className="font-busorama text-xl text-quarternary font-bold mb-4">11º Aniversário</h3>
+                            <div className="flex flex-col md:flex-row-reverse gap-6 items-start">
+                                <p className="font-poppins text-gray-600 leading-relaxed md:w-1/2">
+                                    Equipe do 11º Aniversário.
+                                </p>
+                                <div className="w-full md:w-1/2 rounded-2xl overflow-hidden shadow-md bg-gray-100">
+                                    <img
+                                        src={imagensDaHistoria["aniversario-11-equipe.jpg"]}
+                                        alt="11º Aniversário"
+                                        className="w-full h-48 md:h-64 hover:scale-105 transition-transform duration-500"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        {/* ITEM 50 DA HISTÓRIA - 11º Aniversário*/}
+                        <div className="relative pl-8 md:pl-12">
+                            <div className="absolute -left-[14px] top-1 w-6 h-6 bg-tertiary rounded-full border-4 border-white shadow-md"></div>
+                            <h3 className="font-busorama text-xl text-tertiary font-bold mb-4">11º Aniversário</h3>
+                            <div className="flex flex-col md:flex-row gap-6 items-start">
+                                <p className="font-poppins text-gray-600 leading-relaxed md:w-1/2">
+                                    Celebração ao 11º aniversario com participação especial do Pr Jesse e Bp Claudinei Santos.
+                                </p>
+                                <div className="w-full md:w-1/2 rounded-2xl overflow-hidden shadow-md bg-gray-100">
+                                    <img
+                                        src={imagensDaHistoria["aniversario-11-3.jpg"]}
+                                        alt="11º aniversário"
+                                        className="w-full h-48 md:h-64 object-cover hover:scale-105 transition-transform duration-500"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        {/* ITEM 51 DA HISTÓRIA - 11º Aniversário*/}
+                        <div className="relative pl-8 md:pl-12">
+                            <div className="absolute -left-[14px] top-1 w-6 h-6 bg-quarternary rounded-full border-4 border-white shadow-md"></div>
+                            <h3 className="font-busorama text-xl text-quarternary font-bold mb-4">11º Aniversário</h3>
+                            <div className="flex flex-col md:flex-row-reverse gap-6 items-start">
+                                <p className="font-poppins text-gray-600 leading-relaxed md:w-1/2">
+                                    Equipe do 11º Aniversário com participação especial do Pr Jesse e Bp Claudinei Santos.
+                                </p>
+                                <div className="w-full md:w-1/2 rounded-2xl overflow-hidden shadow-md bg-gray-100">
+                                    <img
+                                        src={imagensDaHistoria["aniversario-11-4.jpg"]}
+                                        alt="11º Aniversário"
+                                        className="w-full h-48 md:h-64 object-cover hover:scale-105 transition-transform duration-500"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        {/* ITEM 52 DA HISTÓRIA - Culto*/}
+                        <div className="relative pl-8 md:pl-12">
+                            <div className="absolute -left-[14px] top-1 w-6 h-6 bg-tertiary rounded-full border-4 border-white shadow-md"></div>
+                            <h3 className="font-busorama text-xl text-tertiary font-bold mb-4">Culto</h3>
+                            <div className="flex flex-col md:flex-row gap-6 items-start">
+                                <p className="font-poppins text-gray-600 leading-relaxed md:w-1/2">
+                                </p>
+                                <div className="w-full md:w-1/2 rounded-2xl overflow-hidden shadow-md bg-gray-100">
+                                    <img
+                                        src={imagensDaHistoria["culto-9.jpg"]}
+                                        alt="Culto"
+                                        className="w-full h-48 md:h-64 object-cover hover:scale-105 transition-transform duration-500"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        {/* ITEM 53 DA HISTÓRIA - 11º Aniversário*/}
+                        <div className="relative pl-8 md:pl-12">
+                            <div className="absolute -left-[14px] top-1 w-6 h-6 bg-quarternary rounded-full border-4 border-white shadow-md"></div>
+                            <h3 className="font-busorama text-xl text-quarternary font-bold mb-4">Dias atuais</h3>
+                            <div className="flex flex-col md:flex-row-reverse gap-6 items-start">
+                                <p className="font-poppins text-gray-600 leading-relaxed md:w-1/2">
+                                </p>
+                                <div className="w-full md:w-1/2 rounded-2xl overflow-hidden shadow-md bg-gray-100">
+                                    <img
+                                        src={imagensDaHistoria["dias-atuais.jpg"]}
+                                        alt="11º Aniversário"
                                         className="w-full h-48 md:h-64 object-cover hover:scale-105 transition-transform duration-500"
                                     />
                                 </div>
