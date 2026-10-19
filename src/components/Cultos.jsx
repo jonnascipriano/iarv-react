@@ -32,10 +32,20 @@
         return indice;
     }
 
+    function getIndiceDomingo(){
+        const hoje = new Date();
+        const diasAteDomingo = (7 - hoje.getDay()) % 7;
+        const proximoDomingo = new Date(hoje);
+        proximoDomingo.setDate(hoje.getDate() + diasAteDomingo);
+
+        return Math.min(Math.floor((proximoDomingo.getDate() - 1) / 7), 4);
+    }
+
     const indiceAtual = getIndiceSemana()
+    const indiceDomingo = getIndiceDomingo()
 
     const proxQuarta = escalaQuarta[indiceAtual]
-    const proxDomingo = escalaDomingo[indiceAtual]
+    const proxDomingo = escalaDomingo[indiceDomingo]
 
 
 export default function Cultos(){
